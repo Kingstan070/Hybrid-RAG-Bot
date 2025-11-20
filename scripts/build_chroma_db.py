@@ -2,6 +2,8 @@
 
 import argparse
 from embeddings.embedder import build_chroma_db
+from app_logging.embed_logger import embed_logger  # <-- NEW
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Build ChromaDB")
@@ -10,6 +12,11 @@ if __name__ == "__main__":
     parser.add_argument("--limit", type=int, help="Use only N chunks")
     args = parser.parse_args()
 
-    count = build_chroma_db(args.input, args.persist,
-                            limit=args.limit)
+    embed_logger.info(
+        f"Starting ChromaDB build | input={args.input} | persist={args.persist} | limit={args.limit}"
+    )
+
+    count = build_chroma_db(args.input, args.persist, limit=args.limit)
+
+    embed_logger.info(f"Stored {count} chunks into {args.persist}")
     print(f"[OK] Stored {count} chunks into {args.persist}")

@@ -3,6 +3,9 @@
 import fitz  # PyMuPDF
 from typing import List, Dict
 
+# NEW — logging
+from app_logging.parse_logger import parse_logger
+
 
 def _build_page_to_chapter(doc) -> Dict[int, str]:
     """
@@ -13,10 +16,13 @@ def _build_page_to_chapter(doc) -> Dict[int, str]:
     toc = doc.get_toc()
     total_pages = len(doc)
 
+    parse_logger.info(f"TOC entries detected = {len(toc)}")
+
     # Default mapping
     page_to_chapter = {p: "Unknown" for p in range(total_pages)}
 
     if not toc:
+        parse_logger.warning("No TOC found — returning default mapping.")
         return page_to_chapter
 
     # Count entries by level
@@ -24,27 +30,33 @@ def _build_page_to_chapter(doc) -> Dict[int, str]:
     for level, title, _ in toc:
         level_counts[level] = level_counts.get(level, 0) + 1
 
+    parse_logger.info(f"TOC level counts: {level_counts}")
+
     # Decide best TOC level
     if 1 in level_counts and level_counts[1] >= 3:
         chapter_level = 1
+        parse_logger.info("Using TOC level 1 as chapter level")
     else:
-        chapter_level = 2   # fallback when level-1 is generic
+        chapter_level = 2
+        parse_logger.info("Using TOC level 2 as fallback")
 
     # Collect chapters
     chapters = []
     for level, title, page_num in toc:
         if level != chapter_level:
             continue
-
         idx = max(0, min(total_pages - 1, page_num - 1))
         chapters.append((idx, title))
 
     if not chapters:
-        return page_to_chapter  # nothing matched
+        parse_logger.warning(
+            "No matching chapters found for selected TOC level.")
+        return page_to_chapter
 
-    chapters.sort(key=lambda x: x[0])  # sort by page index
+    chapters.sort(key=lambda x: x[0])
+    parse_logger.info(f"Total chapters detected = {len(chapters)}")
 
-    # Map page ranges - chapters
+    # Map chapters to pages
     for i, (start_page, title) in enumerate(chapters):
         end_page = chapters[i + 1][0] if i + 1 < len(chapters) else total_pages
         for p in range(start_page, end_page):
@@ -62,6 +74,8 @@ def _parse_without_toc(doc, total_pages):
     If no heading is detected, assign 'General'.
     """
 
+    parse_logger.warning("TOC not found — using heuristic-based parsing")
+
     parsed_blocks = []
     current_chapter = "General"
 
@@ -70,19 +84,15 @@ def _parse_without_toc(doc, total_pages):
         text = page.get_text("text").strip()
 
         if len(text) < 30:
-            # Skip blank or useless pages
             continue
 
-        # Heuristic: detect headings in FIRST 5 LINES
         lines = text.split("\n")[:5]
         for line in lines:
             line_clean = line.strip()
-            if (
-                line_clean.isupper()                               # ALL CAPS - likely heading
-                # Short phrase
-                and 2 <= len(line_clean.split()) <= 6
-            ):
-                current_chapter = line_clean                       # Update chapter
+            if line_clean.isupper() and 2 <= len(line_clean.split()) <= 6:
+                current_chapter = line_clean
+                parse_logger.info(
+                    f"Detected new chapter: {current_chapter} (Page {p})")
                 break
 
         parsed_blocks.append({
@@ -91,51 +101,56 @@ def _parse_without_toc(doc, total_pages):
             "text": text,
         })
 
+    parse_logger.info(
+        f"Parsed {len(parsed_blocks)} pages using fallback parser")
     return parsed_blocks
 
 
 def parse_pdf(pdf_path: str) -> List[Dict]:
     """
-    Very simple parser:
-    - Uses TOC level-1 entries as 'chapter'
-    - Extracts raw text per page
-    - Returns list[ {page, chapter, text} ]
+    Main PDF parser:
+    - Uses TOC detection
+    - Falls back to heuristic parsing
     """
+    parse_logger.info(f"Opening PDF: {pdf_path}")
+
     doc = fitz.open(pdf_path)
     total_pages = len(doc)
+    parse_logger.info(f"Total pages detected: {total_pages}")
 
     toc = doc.get_toc()
 
-    if toc and len(toc) > 0:
-        print("[INFO] TOC found - structured parsing.")
+    if toc:
+        parse_logger.info("TOC detected — structured parsing enabled")
         page_to_chapter = _build_page_to_chapter(doc)
         use_toc = True
     else:
-        print("[WARN] NO TOC found - using fallback parser.")
+        parse_logger.warning(
+            "No TOC detected — using fallback heuristic parser")
         use_toc = False
 
-    parsed_blocks: List[Dict] = []
+    parsed_blocks = []
 
     if use_toc:
         for p in range(total_pages):
-            page = doc[p]
-            text = page.get_text("text").strip()
+            text = doc[p].get_text("text").strip()
             if len(text) < 20:
                 continue
-
             parsed_blocks.append({
                 "page": p,
-                "chapter": page_to_chapter[p],
+                "chapter": page_to_chapter.get(p, "Unknown"),
                 "text": text,
             })
+        parse_logger.info(
+            f"Structured parsing complete — parsed {len(parsed_blocks)} pages")
     else:
         parsed_blocks = _parse_without_toc(doc, total_pages)
 
     return parsed_blocks
 
 
+# Debug CLI
 if __name__ == "__main__":
-    # Small debug CLI: show first N pages and their chapters
     import argparse
     import json
 
@@ -144,6 +159,8 @@ if __name__ == "__main__":
     parser.add_argument("--pages", type=int, default=40)
     parser.add_argument("--out", default=None)
     args = parser.parse_args()
+
+    parse_logger.info(f"CLI started for {args.pdf}")
 
     doc = fitz.open(args.pdf)
     mapping = _build_page_to_chapter(doc)
@@ -156,4 +173,5 @@ if __name__ == "__main__":
         blocks = parse_pdf(args.pdf)
         with open(args.out, "w", encoding="utf-8") as f:
             json.dump(blocks, f, indent=2, ensure_ascii=False)
+        parse_logger.info(f"Parsed blocks saved to {args.out}")
         print(f"\nSaved parsed blocks to {args.out}")

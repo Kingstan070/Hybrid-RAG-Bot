@@ -1,6 +1,10 @@
+# ingestion/chunker.py
+
 import re
 import os
 from typing import List, Dict
+
+from app_logging.parse_logger import parse_logger  # <-- NEW
 
 MAX_CHARS = 2000
 
@@ -10,9 +14,13 @@ def chunk_blocks(raw_blocks: List[Dict], pdf_path: str) -> List[Dict]:
     Chunk PDF text blocks using paragraph merging.
     Assign a GLOBAL chunk index. Add 'source' metadata.
     """
+    source = os.path.basename(pdf_path)
+    parse_logger.info(
+        f"Starting chunking for source={source} | total_blocks={len(raw_blocks)}"
+    )
+
     chunks = []
-    source = os.path.basename(pdf_path)  # NEW
-    global_chunk_idx = 0                 # NEW
+    global_chunk_idx = 0
 
     for block in raw_blocks:
         text = block["text"].strip()
@@ -34,7 +42,7 @@ def chunk_blocks(raw_blocks: List[Dict], pdf_path: str) -> List[Dict]:
                 global_chunk_idx += 1
                 chunks.append({
                     "id": f"{source}_p{page}_c{global_chunk_idx}",
-                    "source": source,        # NEW
+                    "source": source,
                     "chapter": chapter,
                     "page": page,
                     "chunk_index": global_chunk_idx,
@@ -47,11 +55,14 @@ def chunk_blocks(raw_blocks: List[Dict], pdf_path: str) -> List[Dict]:
             global_chunk_idx += 1
             chunks.append({
                 "id": f"{source}_p{page}_c{global_chunk_idx}",
-                "source": source,           # NEW
+                "source": source,
                 "chapter": chapter,
                 "page": page,
                 "chunk_index": global_chunk_idx,
                 "text": current_chunk.strip()
             })
 
+    parse_logger.info(
+        f"Finished chunking for source={source} | total_chunks={len(chunks)}"
+    )
     return chunks
