@@ -36,7 +36,9 @@ if __name__ == "__main__":
     # ---- 3) Optional: Chunking ----
     if args.chunk:
         print("[INFO] Chunking enabled...")
-        chunks = chunk_blocks(blocks)
+
+        # 🔥 NEW: pass PDF path to ensure 'source' metadata + unique IDs
+        chunks = chunk_blocks(blocks, args.pdf)
 
         chunk_path = args.out.replace(".json", "_chunked.json")
         with open(chunk_path, "w", encoding="utf-8") as f:
