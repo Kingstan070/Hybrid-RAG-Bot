@@ -43,7 +43,7 @@ def build_chroma_db(input_file: str, persist_dir: str, limit: int = None):
         )
 
     total_time = time.time() - start
-    print(f"\n[OK] Stored {len(texts)} chunks → {persist_dir}")
+    print(f"\n[OK] Stored {len(texts)} chunks - {persist_dir}")
     print(f"[TIME] Total elapsed: {total_time:.2f} sec")
     print(f"[SPEED] Avg per chunk: {total_time/len(texts):.3f} sec")
 

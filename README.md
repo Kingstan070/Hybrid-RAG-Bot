@@ -9,17 +9,17 @@ The project is built using:
 * PyMuPDF (PDF parsing)
 * Ollama (local LLM + embeddings)
 * RAKE (lightweight keyword extraction)
-* ChromaDB (vector storage – coming next)
+* ChromaDB (vector storage - coming next)
 
 The goal is to create a **hybrid retrieval system** with:
-✔ Metadata filtering
-✔ Low hallucination
-✔ Latency logging (retrieval vs generation)
-✔ Flask API + Streamlit UI (planned)
+* Metadata filtering
+* Low hallucination
+* Latency logging (retrieval vs generation)
+* Flask API + Streamlit UI (planned)
 
 ---
 
-## 🚧 Current Progress
+## Current Progress
 
 **Completed:**
 
@@ -33,7 +33,7 @@ The goal is to create a **hybrid retrieval system** with:
 
 ---
 
-## 🧠 Next Steps (To Do)
+## Next Steps (To Do)
 
 * [ ] Embed chunks using `mxbai-embed-large` via Ollama
 * [ ] Create ChromaDB vector store with metadata

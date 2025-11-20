@@ -1,5 +1,5 @@
 """
-CLI TEST – CHECK IF OLLAMA EMBEDDINGS WORK
+CLI TEST - CHECK IF OLLAMA EMBEDDINGS WORK
 Run: python scripts/test_ollama_embed.py --model mxbai-embed-large
 """
 

@@ -1,5 +1,5 @@
 """
-CLI TEST – CHECK IF OLLAMA LLM WORKS
+CLI TEST - CHECK IF OLLAMA LLM WORKS
 Run: python scripts/test_ollama_llm.py --model llama3.2:3b
 """
 

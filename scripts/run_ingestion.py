@@ -37,14 +37,14 @@ if __name__ == "__main__":
     if args.chunk:
         print("[INFO] Chunking enabled...")
 
-        # 🔥 NEW: pass PDF path to ensure 'source' metadata + unique IDs
+        # NEW: pass PDF path to ensure 'source' metadata + unique IDs
         chunks = chunk_blocks(blocks, args.pdf)
 
         chunk_path = args.out.replace(".json", "_chunked.json")
         with open(chunk_path, "w", encoding="utf-8") as f:
             json.dump(chunks, f, indent=2, ensure_ascii=False)
 
-        print(f"[OK] Created {len(chunks)} chunks → {chunk_path}")
+        print(f"[OK] Created {len(chunks)} chunks - {chunk_path}")
     else:
         chunks = None
         chunk_path = None
@@ -63,6 +63,6 @@ if __name__ == "__main__":
             with open(key_path, "w", encoding="utf-8") as f:
                 json.dump(chunks, f, indent=2, ensure_ascii=False)
 
-            print(f"[OK] Keywords added → {key_path}")
+            print(f"[OK] Keywords added - {key_path}")
 
     print("\n[FINISHED] Ingestion pipeline complete.")

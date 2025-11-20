@@ -7,10 +7,10 @@ def inspect_toc(pdf_path):
     toc = doc.get_toc()
 
     if not toc:
-        print("❌ No TOC found in PDF metadata. Must use heuristic parser.")
+        print("No TOC found in PDF metadata. Must use heuristic parser.")
         return
 
-    print(f"✔ TOC found with {len(toc)} entries:\n")
+    print(f"TOC found with {len(toc)} entries:\n")
     for level, title, page in toc[:20]:  # print first 20
         print(f"Level {level} | Page {page} | {title}")
 

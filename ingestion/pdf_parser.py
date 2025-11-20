@@ -7,8 +7,8 @@ from typing import List, Dict
 def _build_page_to_chapter(doc) -> Dict[int, str]:
     """
     Dynamically detect correct TOC level for chapters.
-    1. If Level 1 has many entries → use it.
-    2. If Level 1 only has 1-2 entries → switch to Level 2.
+    1. If Level 1 has many entries - use it.
+    2. If Level 1 only has 1-2 entries - switch to Level 2.
     """
     toc = doc.get_toc()
     total_pages = len(doc)
@@ -28,7 +28,7 @@ def _build_page_to_chapter(doc) -> Dict[int, str]:
     if 1 in level_counts and level_counts[1] >= 3:
         chapter_level = 1
     else:
-        chapter_level = 2   # ⚠ fallback when level-1 is generic
+        chapter_level = 2   # fallback when level-1 is generic
 
     # Collect chapters
     chapters = []
@@ -44,7 +44,7 @@ def _build_page_to_chapter(doc) -> Dict[int, str]:
 
     chapters.sort(key=lambda x: x[0])  # sort by page index
 
-    # Map page ranges → chapters
+    # Map page ranges - chapters
     for i, (start_page, title) in enumerate(chapters):
         end_page = chapters[i + 1][0] if i + 1 < len(chapters) else total_pages
         for p in range(start_page, end_page):
@@ -78,7 +78,7 @@ def _parse_without_toc(doc, total_pages):
         for line in lines:
             line_clean = line.strip()
             if (
-                line_clean.isupper()                               # ALL CAPS → likely heading
+                line_clean.isupper()                               # ALL CAPS - likely heading
                 # Short phrase
                 and 2 <= len(line_clean.split()) <= 6
             ):
@@ -107,11 +107,11 @@ def parse_pdf(pdf_path: str) -> List[Dict]:
     toc = doc.get_toc()
 
     if toc and len(toc) > 0:
-        print("[INFO] TOC found → structured parsing.")
+        print("[INFO] TOC found - structured parsing.")
         page_to_chapter = _build_page_to_chapter(doc)
         use_toc = True
     else:
-        print("[WARN] NO TOC found → using fallback parser.")
+        print("[WARN] NO TOC found - using fallback parser.")
         use_toc = False
 
     parsed_blocks: List[Dict] = []
@@ -148,7 +148,7 @@ if __name__ == "__main__":
     doc = fitz.open(args.pdf)
     mapping = _build_page_to_chapter(doc)
 
-    print("=== PAGE → CHAPTER MAP (preview) ===")
+    print("=== PAGE - CHAPTER MAP (preview) ===")
     for p in range(min(args.pages, len(doc))):
         print(f"Page {p:3d} -> {mapping[p]}")
 
