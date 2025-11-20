@@ -4,9 +4,7 @@ import numpy as np
 from langchain_ollama import OllamaEmbeddings
 
 embedder = OllamaEmbeddings(model="mxbai-embed-large")
-
-# ---------- PRECOMPUTED STORAGE ----------
-CHAPTER_VECS = {}   # {"Introduction": [0.23, ...]}
+CHAPTER_VECS = {}   # CACHED!
 
 
 def cosine(a, b):
@@ -16,20 +14,29 @@ def cosine(a, b):
 
 
 def init_embeddings(chapters: list):
-    """Embed chapters ONCE and store vectors."""
+    """Embed chapters ONCE & cache vectors"""
     global CHAPTER_VECS
+    CHAPTER_VECS = {}  # RESET & REBUILD!
     for c in chapters:
         CHAPTER_VECS[c] = embedder.embed_query(c)
 
 
 def detect_relevant_chapter(query: str, threshold: float = 0.45) -> str:
-    """Return best matching chapter or Unknown."""
+    """Safely return best matching chapter or Unknown"""
+
+    # Prevent crash
+    if not CHAPTER_VECS:
+        return "Unknown"
+
     query_vec = embedder.embed_query(query)
 
     scores = [
         (chap, cosine(query_vec, vec))
         for chap, vec in CHAPTER_VECS.items()
     ]
+
+    if not scores:
+        return "Unknown"
 
     best, score = sorted(scores, key=lambda x: x[1], reverse=True)[0]
     return best if score >= threshold else "Unknown"
