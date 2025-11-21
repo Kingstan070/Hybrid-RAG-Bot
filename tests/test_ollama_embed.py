@@ -4,11 +4,13 @@ Run: python scripts/test_ollama_embed.py --model mxbai-embed-large
 """
 
 import argparse
+import os
 from langchain_ollama import OllamaEmbeddings
 
 
 def test_embeddings(model_name: str):
-    embedder = OllamaEmbeddings(model=model_name)
+    embedder = OllamaEmbeddings(model=model_name,
+                                base_url=os.getenv("OLLAMA_HOST", "http://localhost:11434"))
     vec = embedder.embed_query("test embeddings")
     print("\nEmbedding vector size:", len(vec))
     print("First few values:", vec[:10])

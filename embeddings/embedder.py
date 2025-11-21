@@ -1,10 +1,12 @@
 # embeddings/embedder.py
 
 import json
+import os
 import time
 from tqdm import tqdm
 from langchain_ollama import OllamaEmbeddings
 from langchain_chroma import Chroma
+from config.settings import settings
 
 
 def build_chroma_db(input_file: str, persist_dir: str, limit: int = None):
@@ -25,7 +27,8 @@ def build_chroma_db(input_file: str, persist_dir: str, limit: int = None):
         for d in data
     ]
 
-    embeddings = OllamaEmbeddings(model="mxbai-embed-large")
+    embeddings = OllamaEmbeddings(model=settings.OLLAMA_EMBEDDING_MODEL,
+                                  base_url=os.getenv("OLLAMA_HOST", "http://localhost:11434"))
 
     vectordb = Chroma(
         collection_name="manual_chunks",

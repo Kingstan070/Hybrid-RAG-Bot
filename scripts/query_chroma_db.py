@@ -1,5 +1,6 @@
 # scripts/query_chroma_db.py
 
+import os
 from langchain_chroma import Chroma
 from rag.pipeline import rag_query
 from rag.metadata_matcher import init_embeddings  # IMPORTANT
@@ -10,7 +11,8 @@ import config.settings as settings
 def main():
     db = Chroma(collection_name=settings.CHROMA_COLLECTION,
                 persist_directory=settings.CHROMA_PERSIST_DIR,
-                embedding_function=OllamaEmbeddings(model=settings.EMBEDDING_MODEL))
+                embedding_function=OllamaEmbeddings(model=settings.EMBEDDING_MODEL,
+                                                    base_url=os.getenv("OLLAMA_HOST", "http://localhost:11434")))
 
     # ---------- LOAD CHAPTERS FIRST ----------
     collection = db.get()

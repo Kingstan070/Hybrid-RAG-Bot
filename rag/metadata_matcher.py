@@ -1,9 +1,12 @@
 # rag/metadata_matcher.py
 
+import os
 import numpy as np
 from langchain_ollama import OllamaEmbeddings
+from config.settings import settings
 
-embedder = OllamaEmbeddings(model="mxbai-embed-large")
+embedder = OllamaEmbeddings(model=settings.OLLAMA_EMBEDDING_MODEL,
+                            base_url=os.getenv("OLLAMA_HOST", "http://localhost:11434"))
 CHAPTER_VECS = {}  # cached once
 
 

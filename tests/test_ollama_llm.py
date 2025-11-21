@@ -5,10 +5,12 @@ Run: python scripts/test_ollama_llm.py --model llama3.2:3b
 
 import argparse
 from langchain_ollama import ChatOllama
+import os
 
 
 def test_llm(model_name: str):
-    llm = ChatOllama(model=model_name)
+    llm = ChatOllama(model=model_name,
+                     base_url=os.getenv("OLLAMA_HOST", "http://localhost:11434"))
     response = llm.invoke(
         "Hello, are you working correctly? my name is allwin")
     print("\nResponse from LLM:")

@@ -1,5 +1,6 @@
 # api/app.py
 
+import os
 from fastapi import FastAPI, HTTPException
 from langchain_chroma import Chroma
 from langchain_ollama import OllamaEmbeddings
@@ -13,7 +14,8 @@ app = FastAPI(title="RAG Chat API")
 db = Chroma(
     collection_name=settings.CHROMA_COLLECTION,
     persist_directory=settings.CHROMA_PERSIST_DIR,
-    embedding_function=OllamaEmbeddings(model=settings.EMBEDDING_MODEL)
+    embedding_function=OllamaEmbeddings(model=settings.EMBEDDING_MODEL,
+                                        base_url=os.getenv("OLLAMA_HOST", "http://localhost:11434"))
 )
 
 # Load & cache chapters embeddings

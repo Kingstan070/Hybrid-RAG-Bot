@@ -1,5 +1,6 @@
 # rag/pipeline.py
 
+import os
 import time
 from rag.metadata_matcher import detect_top_chapters, cosine
 from langchain_ollama import ChatOllama
@@ -129,7 +130,8 @@ ANSWER:
     # 5️⃣ CALL LLM (✔ model comes from settings)
     # ---------------------------------------------------------
     t2 = time.time()
-    llm = ChatOllama(model=settings.settings.LLM_MODEL)
+    llm = ChatOllama(model=settings.settings.LLM_MODEL,
+                     base_url=os.getenv("OLLAMA_HOST", "http://localhost:11434"))
     response = llm.invoke(prompt)
     response_text = response.content
 
