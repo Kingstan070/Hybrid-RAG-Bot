@@ -5,6 +5,7 @@ import os
 from typing import List, Dict
 
 from app_logging.parse_logger import parse_logger  # <-- NEW
+from ingestion.utils import smart_clean  # <-- NEW
 
 MAX_CHARS = 2000
 
@@ -14,6 +15,7 @@ def chunk_blocks(raw_blocks: List[Dict], pdf_path: str) -> List[Dict]:
     Chunk PDF text blocks using paragraph merging.
     Assign a GLOBAL chunk index. Add 'source' metadata.
     """
+
     source = os.path.basename(pdf_path)
     parse_logger.info(
         f"Starting chunking for source={source} | total_blocks={len(raw_blocks)}"
@@ -24,6 +26,8 @@ def chunk_blocks(raw_blocks: List[Dict], pdf_path: str) -> List[Dict]:
 
     for block in raw_blocks:
         text = block["text"].strip()
+        text = smart_clean(text)
+
         chapter = block.get("chapter", "Unknown")
         page = block.get("page", -1)
 
