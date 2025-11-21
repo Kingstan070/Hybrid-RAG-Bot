@@ -5,14 +5,15 @@ from langchain_chroma import Chroma
 from langchain_ollama import OllamaEmbeddings
 from rag.pipeline import rag_query
 from rag.metadata_matcher import init_embeddings
+import config.settings as settings
 
 app = FastAPI(title="RAG Chat API")
 
 # Load DB at startup
 db = Chroma(
-    collection_name="manual_chunks",
-    persist_directory="data/chroma_db",
-    embedding_function=OllamaEmbeddings(model="mxbai-embed-large")
+    collection_name=settings.CHROMA_COLLECTION,
+    persist_directory=settings.CHROMA_PERSIST_DIR,
+    embedding_function=OllamaEmbeddings(model=settings.EMBEDDING_MODEL)
 )
 
 # Load & cache chapters embeddings

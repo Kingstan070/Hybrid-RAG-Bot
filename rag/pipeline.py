@@ -7,15 +7,21 @@ from langchain_ollama import ChatOllama
 from app_logging.query_logger import query_logger
 from app_logging.llm_logger import llm_logger
 
+import config.settings as settings   # <-- already imported
 
 # ---------------- SAFE LOGGING ----------------
+
+
 def safe_log(msg: str):
     return msg.encode("ascii", errors="ignore").decode("ascii")
 
 
 # ---------------- SMART HALLUCINATION CHECK ----------------
-def context_is_relevant(query, context, embed_fn, min_sim=0.45):
+def context_is_relevant(query, context, embed_fn, min_sim=None):
     """Semantic similarity check (better than overlap)."""
+    # ❗ Use default from settings if not provided
+    min_sim = min_sim or settings.settings.CONTEXT_THRESHOLD
+
     q_vec = embed_fn(query)
     ctx_vec = embed_fn(context)
     sim = cosine(q_vec, ctx_vec)
@@ -23,9 +29,12 @@ def context_is_relevant(query, context, embed_fn, min_sim=0.45):
 
 
 # ---------------- RAG PIPELINE ----------------
-def rag_query(db, query: str, prev_answer=None, sim_threshold=0.55):
+def rag_query(db, query: str, prev_answer=None, sim_threshold=None):
     total_start = time.time()
     query_logger.info(safe_log(f"Query received → {query}"))
+
+    # ❗ Use config threshold if none provided
+    sim_threshold = sim_threshold or settings.settings.SIM_THRESHOLD
 
     # 🧠 INCLUDE CONTEXT FROM PREVIOUS ANSWERS (FOLLOW-UP QUESTIONS SUPPORT)
     prev_context = f"PREVIOUS ANSWER:\n{prev_answer}\n\n" if prev_answer else ""
@@ -41,7 +50,7 @@ def rag_query(db, query: str, prev_answer=None, sim_threshold=0.55):
         return "I couldn't analyze any relevant sections. Please rephrase."
 
     max_score = max(s for _, s in chapters_scores)
-    threshold_ratio = 0.85  # keep chapters >= 85% of best score
+    threshold_ratio = 0.85  # KEEP THIS — no change
 
     valid_chapters = [
         chap for chap, s in chapters_scores
@@ -59,7 +68,6 @@ def rag_query(db, query: str, prev_answer=None, sim_threshold=0.55):
     # 2️⃣ RETRIEVE DOCS (ONLY FROM VALID CHAPTERS, NO GLOBAL)
     # ---------------------------------------------------------
     docs = []
-
     for chap in valid_chapters:
         try:
             result = db.similarity_search(query, k=2, filter={"chapter": chap})
@@ -67,9 +75,9 @@ def rag_query(db, query: str, prev_answer=None, sim_threshold=0.55):
             query_logger.info(safe_log(f"Docs from '{chap}' → {len(result)}"))
         except Exception as e:
             query_logger.warning(
-                safe_log(f"Failed chapter search → {chap} | {e}"))
+                safe_log(f"Failed chapter search → {chap} | {e}")
+            )
 
-    # ---- REMOVE DUPLICATES ----
     unique_docs = list({d.page_content: d for d in docs}.values())
     query_logger.info(safe_log(f"Total unique docs → {len(unique_docs)}"))
 
@@ -82,12 +90,12 @@ def rag_query(db, query: str, prev_answer=None, sim_threshold=0.55):
     context = prev_context + \
         "\n\n".join(d.page_content for d in unique_docs[:3])
 
-    # 🔍 SEMANTIC HALLUCINATION CHECK
+    # 🔍 SEMANTIC HALLUCINATION CHECK (/context threshold from settings)
     ok, sim = context_is_relevant(
         query,
         context,
         db._embedding_function.embed_query,
-        min_sim=0.35
+        min_sim=settings.settings.CONTEXT_THRESHOLD
     )
 
     query_logger.info(safe_log(f"Context similarity score = {sim:.3f}"))
@@ -118,10 +126,10 @@ ANSWER:
 """
 
     # ---------------------------------------------------------
-    # 5️⃣ CALL LLM
+    # 5️⃣ CALL LLM (✔ model comes from settings)
     # ---------------------------------------------------------
     t2 = time.time()
-    llm = ChatOllama(model="llama3.2:3b")
+    llm = ChatOllama(model=settings.settings.LLM_MODEL)
     response = llm.invoke(prompt)
     response_text = response.content
 
@@ -130,6 +138,7 @@ ANSWER:
     llm_logger.info(safe_log(f"Response Time = {time.time() - t2:.4f}s"))
 
     query_logger.info(
-        safe_log(f"TOTAL LATENCY = {time.time() - total_start:.4f}s"))
+        safe_log(f"TOTAL LATENCY = {time.time() - total_start:.4f}s")
+    )
 
     return response_text

@@ -5,7 +5,8 @@ import argparse
 from ingestion.pdf_parser import parse_pdf
 from ingestion.chunker import chunk_blocks
 
-from app_logging.parse_logger import parse_logger  # <-- NEW
+from app_logging.parse_logger import parse_logger
+import config.settings as settings
 
 # Optional: import keyword extractor only when required
 try:
@@ -20,7 +21,7 @@ except ImportError:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="PDF Ingestion Pipeline")
     parser.add_argument("--pdf", required=True, help="Path to PDF file")
-    parser.add_argument("--out", default="data/processed_csv/raw_blocks.json",
+    parser.add_argument("--out", default=settings.PROCESSED_RAW_BLOCKS_PATH,
                         help="Output path for raw data")
     parser.add_argument("--chunk", action="store_true",
                         help="Chunk the parsed data")
