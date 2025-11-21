@@ -113,8 +113,8 @@ You may also delete the existing `data/chroma_db` folder to rebuild it using any
 
 | Step | Command                                                       | Purpose                       |
 | ---- | ------------------------------------------------------------- | ----------------------------- |
-| 1️⃣  | `python scripts/ingest_pdf.py --pdf_path input.pdf --chunk`   | Parse PDF & generate metadata |
-| 2️⃣  | `python scripts/build_chroma.py`                              | Build embeddings + local DB   |
+| 1️⃣  | `python -m scripts.run_ingestion --pdf data\raw_pdfs\virtualbox_6.pdf --out data\processed_csv\raw_blocks.json --chunk`   | Parse PDF & generate metadata |
+| 2️⃣  | `python -m scripts.build_chroma_db --input data\processed_csv\raw_blocks_chunked.json`                              | Build embeddings + local DB   |
 
 ⚠ **Note:** `query_chroma.py` is only for testing.  
 
