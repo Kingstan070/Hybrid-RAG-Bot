@@ -107,6 +107,10 @@ Once chunks are extracted, we:
 
 ### 🚀 **Run These Scripts (In Correct Order)**
 
+Only required if `data/chroma_db` folder is empty.
+If it already exists, you can skip ingestion and directly run the app.
+You may also delete the existing `data/chroma_db` folder to rebuild it using any custom PDF.
+
 | Step | Command                                                       | Purpose                       |
 | ---- | ------------------------------------------------------------- | ----------------------------- |
 | 1️⃣  | `python scripts/ingest_pdf.py --pdf_path input.pdf --chunk`   | Parse PDF & generate metadata |
@@ -115,7 +119,23 @@ Once chunks are extracted, we:
 ⚠ **Note:** `query_chroma.py` is only for testing.  
 
 ---
+### 🖥️ Run the Application (API + UI)
 
+Once the PDF has been ingested and the ChromaDB is built, you can run the application using either API mode or UI mode:
+
+| Mode         | Command                   | Description                                         |
+| ------------ | ------------------------- | --------------------------------------------------- |
+| FastAPI      | `python api/app.py`       | Starts the REST API for querying the RAG system     |
+| Streamlit UI | `streamlit run ui/app.py` | Launches a minimal front-end interface *(optional)* |
+
+to properly run both using different terminals parallely to 
+
+Once both are running:
+
+- FastAPI will be available at → http://localhost:8000
+- Streamlit UI will open automatically in your browser
+
+---
 ## 📁 Project Structure
 
 ```
