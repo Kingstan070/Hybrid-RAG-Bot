@@ -6,7 +6,7 @@ from ingestion.pdf_parser import parse_pdf
 from ingestion.chunker import chunk_blocks
 
 from app_logging.parse_logger import parse_logger
-import config.settings as settings
+from config.settings import settings
 
 # Optional: import keyword extractor only when required
 try:

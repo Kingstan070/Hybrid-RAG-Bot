@@ -6,7 +6,7 @@ from langchain_chroma import Chroma
 from langchain_ollama import OllamaEmbeddings
 from rag.pipeline import rag_query
 from rag.metadata_matcher import init_embeddings
-import config.settings as settings
+from config.settings import settings
 
 app = FastAPI(title="RAG Chat API")
 
@@ -14,7 +14,7 @@ app = FastAPI(title="RAG Chat API")
 db = Chroma(
     collection_name=settings.CHROMA_COLLECTION,
     persist_directory=settings.CHROMA_PERSIST_DIR,
-    embedding_function=OllamaEmbeddings(model=settings.EMBEDDING_MODEL,
+    embedding_function=OllamaEmbeddings(model=settings.OLLAMA_EMBEDDING_MODEL,
                                         base_url=os.getenv("OLLAMA_HOST", "http://localhost:11434"))
 )
 

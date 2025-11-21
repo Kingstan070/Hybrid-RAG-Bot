@@ -3,7 +3,7 @@
 import argparse
 from embeddings.embedder import build_chroma_db
 from app_logging.embed_logger import embed_logger  # <-- NEW
-import config.settings as settings
+from config.settings import settings
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Build ChromaDB")

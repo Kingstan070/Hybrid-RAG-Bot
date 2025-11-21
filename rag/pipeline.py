@@ -8,7 +8,7 @@ from langchain_ollama import ChatOllama
 from app_logging.query_logger import query_logger
 from app_logging.llm_logger import llm_logger
 
-import config.settings as settings   # <-- already imported
+from config.settings import settings
 
 # ---------------- SAFE LOGGING ----------------
 
@@ -21,7 +21,7 @@ def safe_log(msg: str):
 def context_is_relevant(query, context, embed_fn, min_sim=None):
     """Semantic similarity check (better than overlap)."""
     # ❗ Use default from settings if not provided
-    min_sim = min_sim or settings.settings.CONTEXT_THRESHOLD
+    min_sim = min_sim or settings.CONTEXT_THRESHOLD
 
     q_vec = embed_fn(query)
     ctx_vec = embed_fn(context)
@@ -35,7 +35,7 @@ def rag_query(db, query: str, prev_answer=None, sim_threshold=None):
     query_logger.info(safe_log(f"Query received → {query}"))
 
     # ❗ Use config threshold if none provided
-    sim_threshold = sim_threshold or settings.settings.SIM_THRESHOLD
+    sim_threshold = sim_threshold or settings.SIM_THRESHOLD
 
     # 🧠 INCLUDE CONTEXT FROM PREVIOUS ANSWERS (FOLLOW-UP QUESTIONS SUPPORT)
     prev_context = f"PREVIOUS ANSWER:\n{prev_answer}\n\n" if prev_answer else ""
@@ -96,7 +96,7 @@ def rag_query(db, query: str, prev_answer=None, sim_threshold=None):
         query,
         context,
         db._embedding_function.embed_query,
-        min_sim=settings.settings.CONTEXT_THRESHOLD
+        min_sim=settings.CONTEXT_THRESHOLD
     )
 
     query_logger.info(safe_log(f"Context similarity score = {sim:.3f}"))
@@ -130,7 +130,7 @@ ANSWER:
     # 5️⃣ CALL LLM (✔ model comes from settings)
     # ---------------------------------------------------------
     t2 = time.time()
-    llm = ChatOllama(model=settings.settings.LLM_MODEL,
+    llm = ChatOllama(model=settings.LLM_MODEL,
                      base_url=os.getenv("OLLAMA_HOST", "http://localhost:11434"))
     response = llm.invoke(prompt)
     response_text = response.content

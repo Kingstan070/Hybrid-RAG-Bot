@@ -5,13 +5,13 @@ from langchain_chroma import Chroma
 from rag.pipeline import rag_query
 from rag.metadata_matcher import init_embeddings  # IMPORTANT
 from langchain_ollama import OllamaEmbeddings
-import config.settings as settings
+from config.settings import settings
 
 
 def main():
     db = Chroma(collection_name=settings.CHROMA_COLLECTION,
                 persist_directory=settings.CHROMA_PERSIST_DIR,
-                embedding_function=OllamaEmbeddings(model=settings.EMBEDDING_MODEL,
+                embedding_function=OllamaEmbeddings(model=settings.OLLAMA_EMBEDDING_MODEL,
                                                     base_url=os.getenv("OLLAMA_HOST", "http://localhost:11434")))
 
     # ---------- LOAD CHAPTERS FIRST ----------

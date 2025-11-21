@@ -12,17 +12,14 @@ class Settings(BaseModel):
         "data", "processed_csv", "raw_blocks.json")
 
     # ====== EMBEDDINGS ======
-    EMBEDDING_MODEL: str = "mxbai-embed-large"
+    OLLAMA_EMBEDDING_MODEL: str = "mxbai-embed-large"
 
     # ====== LLM MODEL ======
     LLM_MODEL: str = "llama3.2:3b"    # or "llama3" or anything you use
 
     # ====== RAG PARAMETERS ======
-    SIM_THRESHOLD: float = 0.40       # if similarity < threshold, ignore
-    CONTEXT_THRESHOLD: float = 0.75   # if context similarity < threshold, ignore
-
-    # ====== GENERAL ======
-    DEBUG: bool = True
+    SIM_THRESHOLD: float = 0.50       # if similarity < threshold, ignore
+    CONTEXT_THRESHOLD: float = 0.35   # if context similarity < threshold, ignore
 
 
 # create a settings object you can import everywhere

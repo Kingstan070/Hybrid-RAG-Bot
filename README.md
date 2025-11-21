@@ -123,10 +123,10 @@ You may also delete the existing `data/chroma_db` folder to rebuild it using any
 
 Once the PDF has been ingested and the ChromaDB is built, you can run the application using either API mode or UI mode:
 
-| Mode         | Command                   | Description                                         |
-| ------------ | ------------------------- | --------------------------------------------------- |
-| FastAPI      | `python api/app.py`       | Starts the REST API for querying the RAG system     |
-| Streamlit UI | `streamlit run ui/app.py` | Launches a minimal front-end interface *(optional)* |
+| Mode         | Command                              | Description                                         |
+| ------------ | ------------------------------------ | --------------------------------------------------- |
+| FastAPI      | `uvicorn api.app:app --reload`       | Starts the REST API for querying the RAG system     |
+| Streamlit UI | `streamlit run ui/app.py`            | Launches a minimal front-end interface *(optional)* |
 
 to properly run both using different terminals parallely to 
 
