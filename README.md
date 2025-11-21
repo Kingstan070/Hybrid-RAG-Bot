@@ -163,5 +163,6 @@ Hybrid-RAG-Bot/
 ## 📬 Contact
 
 **Author:** Allwin Kingstan  
-📧 **[allwinkingstan@gmail.com](mailto:allwinkingstan@gmail.com)**  
+📧 **[tallwinkingstan@gmail.com](mailto:tallwinkingstan@gmail.com)**  
+
 🔗 GitHub: `https://github.com/Kingstan070`
