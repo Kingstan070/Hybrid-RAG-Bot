@@ -33,6 +33,11 @@ def home():
     return {"message": "RAG API is running 🚀"}
 
 
+@app.get("/healthz")
+def health_check():
+    return {"status": "ok"}
+
+
 @app.post("/ask")
 def ask_question(query: str):
     if not query.strip():
