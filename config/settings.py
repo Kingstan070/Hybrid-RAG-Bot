@@ -11,6 +11,9 @@ class Settings(BaseModel):
     PROCESSED_RAW_BLOCKS_PATH: str = os.path.join(
         "data", "processed_csv", "raw_blocks.json")
 
+    # ====== LOGGING ======
+    LOG_DIR: str = os.path.join("logs")
+
     # ====== EMBEDDINGS ======
     OLLAMA_EMBEDDING_MODEL: str = "mxbai-embed-large"
 

@@ -10,6 +10,8 @@ from config.settings import settings
 
 app = FastAPI(title="RAG Chat API")
 
+LOG_DIR = settings.LOG_DIR
+
 # Load DB at startup
 db = Chroma(
     collection_name=settings.CHROMA_COLLECTION,
@@ -46,5 +48,29 @@ def ask_question(query: str):
     try:
         response = rag_query(db, query)
         return {"query": query, "response": response}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/logs")
+def list_logs():
+    if not os.path.exists(LOG_DIR):
+        raise HTTPException(status_code=404, detail="Log directory not found")
+
+    files = [f for f in os.listdir(LOG_DIR) if f.endswith(".log")]
+    return {"files": files}
+
+
+@app.get("/logs/{filename}")
+def read_log_file(filename: str):
+    filepath = os.path.join(LOG_DIR, filename)
+
+    if not os.path.isfile(filepath):
+        raise HTTPException(status_code=404, detail="Log file not found")
+
+    try:
+        with open(filepath, "r") as file:
+            content = file.read()
+        return {"filename": filename, "content": content}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
