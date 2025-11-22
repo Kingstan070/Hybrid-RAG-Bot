@@ -1,0 +1,36 @@
+2025-11-22 13:55:05 | INFO | QUERY | Query received  Why does my VirtualBox VM's bridged adapter have no internet access when the host does?
+2025-11-22 13:55:08 | INFO | QUERY | Raw chapter scores  [('13 Troubleshooting > 13.6 Windows Hosts > 13.6.6 Bridged Networking Adapters Missing', 0.755678976355102), ("10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.6 Using the Host's Resolver as a DNS Proxy in NAT Mode", 0.6949672242006207), ('10 Advanced Topics > 10.12 Installing the Alternate Bridged Networking Driver on Oracle Solaris 11 Hosts', 0.683343024135958), ('7 Virtual Networking > 7.7 Host-Only Networking', 0.6756794893912501), ('10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.4 Binding NAT Sockets to a Specific Interface', 0.6754006934079826)]
+2025-11-22 13:55:08 | INFO | QUERY | max_score = 0.756
+2025-11-22 13:55:08 | INFO | QUERY | Chapters kept  ['13 Troubleshooting > 13.6 Windows Hosts > 13.6.6 Bridged Networking Adapters Missing', "10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.6 Using the Host's Resolver as a DNS Proxy in NAT Mode", '10 Advanced Topics > 10.12 Installing the Alternate Bridged Networking Driver on Oracle Solaris 11 Hosts', '7 Virtual Networking > 7.7 Host-Only Networking', '10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.4 Binding NAT Sockets to a Specific Interface']
+2025-11-22 13:55:08 | INFO | QUERY | Chapter match time = 2.3572s
+2025-11-22 13:55:10 | INFO | QUERY | Docs from '13 Troubleshooting > 13.6 Windows Hosts > 13.6.6 Bridged Networking Adapters Missing'  1
+2025-11-22 13:55:10 | INFO | QUERY | Docs from '10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.6 Using the Host's Resolver as a DNS Proxy in NAT Mode'  1
+2025-11-22 13:55:11 | INFO | QUERY | Docs from '10 Advanced Topics > 10.12 Installing the Alternate Bridged Networking Driver on Oracle Solaris 11 Hosts'  2
+2025-11-22 13:55:11 | INFO | QUERY | Docs from '7 Virtual Networking > 7.7 Host-Only Networking'  2
+2025-11-22 13:55:11 | INFO | QUERY | Docs from '10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.4 Binding NAT Sockets to a Specific Interface'  2
+2025-11-22 13:55:11 | INFO | QUERY | Total unique docs  6
+2025-11-22 13:55:15 | INFO | QUERY | Context similarity score = 0.611
+2025-11-22 13:57:30 | INFO | LLM | PROMPT SENT  
+You are a customer support technical expert.
+Answer STRICTLY using only the provided context.
+If the information is incomplete  ask a follow-up question.
+Do NOT hallucinate. Do NOT use outside knowledge.
+
+-------------------------
+CONTEXT:
+13 Troubleshooting HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Cdrom\Autorun Certain applications may disable this key against Microsofts advice. If 
+2025-11-22 13:57:30 | INFO | LLM | LLM REPLY  The lack of internet access on your VirtualBox VM's bridged adapter might be due to one of the following reasons:
+
+1. The maximum allowed lter count was reached on the host, which prevented the network driver from being loaded.
+
+2. There is an issue with the network configuration or the drivers installed in the guest OS that are not compatible with the host's Crossbow functionality (on Oracle Solaris 11 hosts).
+
+3. The bridged adapter is not enabled in the VirtualBox settings for the VM.
+
+4. The Guest Additions are not properly configured, which might be affecting the networking capabilities of the guest OS.
+
+5. There is a conflict between the network drivers installed in the host and the guest OS.
+
+To troubleshoot this issue, you can try disabling any recently installed network drivers or software on your host, and then see if the bridged adapter in VirtualBox allows internet access to the VM.
+2025-11-22 13:57:30 | INFO | LLM | Response Time = 134.9571s
+2025-11-22 13:57:30 | INFO | QUERY | TOTAL LATENCY = 144.6816s

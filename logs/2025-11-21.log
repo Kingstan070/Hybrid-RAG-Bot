@@ -1,0 +1,1517 @@
+2025-11-21 11:14:19 | INFO | PARSER | Starting ingestion for PDF: data\raw_pdfs\virtualbox_7.pdf
+2025-11-21 11:14:19 | INFO | PARSER | Opening PDF — data\raw_pdfs\virtualbox_7.pdf
+2025-11-21 11:14:19 | INFO | PARSER | Total pages detected: 545
+2025-11-21 11:14:19 | INFO | PARSER | TOC found — using HIERARCHICAL handler
+2025-11-21 11:14:19 | INFO | PARSER | Hierarchical TOC parsing complete — 571 detected
+2025-11-21 11:14:21 | INFO | PARSER | Structured parsing complete — 545 blocks created
+2025-11-21 11:14:21 | INFO | PARSER | Parsed 545 blocks from data\raw_pdfs\virtualbox_7.pdf
+2025-11-21 11:14:21 | INFO | PARSER | Raw blocks saved to data/processed_csv/raw_blocks.json
+2025-11-21 11:14:21 | INFO | PARSER | Chunking enabled.
+2025-11-21 11:14:21 | INFO | PARSER | Starting chunking for source=virtualbox_7.pdf | total_blocks=545
+2025-11-21 11:14:21 | INFO | PARSER | Finished chunking for source=virtualbox_7.pdf | total_chunks=955
+2025-11-21 11:14:21 | INFO | PARSER | Created 955 chunks -> data/processed_csv/raw_blocks_chunked.json
+2025-11-21 11:14:21 | INFO | PARSER | Keyword extraction enabled.
+2025-11-21 11:14:21 | INFO | PARSER | Starting keyword extraction for 955 chunks | top_k=5
+2025-11-21 11:14:21 | INFO | PARSER | Keyword extraction progress: 1/955
+2025-11-21 11:14:21 | INFO | PARSER | Keyword extraction progress: 51/955
+2025-11-21 11:14:21 | INFO | PARSER | Keyword extraction progress: 101/955
+2025-11-21 11:14:21 | INFO | PARSER | Keyword extraction progress: 151/955
+2025-11-21 11:14:21 | INFO | PARSER | Keyword extraction progress: 201/955
+2025-11-21 11:14:22 | INFO | PARSER | Keyword extraction progress: 251/955
+2025-11-21 11:14:22 | INFO | PARSER | Keyword extraction progress: 301/955
+2025-11-21 11:14:22 | INFO | PARSER | Keyword extraction progress: 351/955
+2025-11-21 11:14:22 | INFO | PARSER | Keyword extraction progress: 401/955
+2025-11-21 11:14:22 | INFO | PARSER | Keyword extraction progress: 451/955
+2025-11-21 11:14:22 | INFO | PARSER | Keyword extraction progress: 501/955
+2025-11-21 11:14:22 | INFO | PARSER | Keyword extraction progress: 551/955
+2025-11-21 11:14:22 | INFO | PARSER | Keyword extraction progress: 601/955
+2025-11-21 11:14:22 | INFO | PARSER | Keyword extraction progress: 651/955
+2025-11-21 11:14:22 | INFO | PARSER | Keyword extraction progress: 701/955
+2025-11-21 11:14:22 | INFO | PARSER | Keyword extraction progress: 751/955
+2025-11-21 11:14:22 | INFO | PARSER | Keyword extraction progress: 801/955
+2025-11-21 11:14:23 | INFO | PARSER | Keyword extraction progress: 851/955
+2025-11-21 11:14:23 | INFO | PARSER | Keyword extraction progress: 901/955
+2025-11-21 11:14:23 | INFO | PARSER | Keyword extraction progress: 951/955
+2025-11-21 11:14:23 | INFO | PARSER | Keyword extraction complete.
+2025-11-21 11:14:23 | INFO | PARSER | Keywords added to chunks -> data/processed_csv/raw_blocks_chunked_keywords.json
+2025-11-21 11:14:23 | INFO | PARSER | Ingestion pipeline complete.
+2025-11-21 11:25:54 | INFO | PARSER | Starting ingestion for PDF: data\raw_pdfs\virtualbox_7.pdf
+2025-11-21 11:25:54 | INFO | PARSER | Opening PDF — data\raw_pdfs\virtualbox_7.pdf
+2025-11-21 11:25:54 | INFO | PARSER | Total pages detected: 545
+2025-11-21 11:25:54 | INFO | PARSER | TOC found — using HIERARCHICAL handler
+2025-11-21 11:25:54 | INFO | PARSER | Hierarchical TOC parsing complete — 571 detected
+2025-11-21 11:25:55 | INFO | PARSER | Structured parsing complete — 545 blocks created
+2025-11-21 11:25:55 | INFO | PARSER | Parsed 545 blocks from data\raw_pdfs\virtualbox_7.pdf
+2025-11-21 11:25:55 | INFO | PARSER | Raw blocks saved to data/processed_csv/raw_blocks.json
+2025-11-21 11:25:55 | INFO | PARSER | Chunking enabled.
+2025-11-21 11:25:56 | INFO | PARSER | Starting chunking for source=virtualbox_7.pdf | total_blocks=545
+2025-11-21 11:25:56 | INFO | PARSER | Finished chunking for source=virtualbox_7.pdf | total_chunks=955
+2025-11-21 11:25:56 | INFO | PARSER | Created 955 chunks -> data/processed_csv/raw_blocks_chunked.json
+2025-11-21 11:25:56 | INFO | PARSER | Keyword extraction enabled.
+2025-11-21 11:25:56 | INFO | PARSER | Starting keyword extraction for 955 chunks | top_k=5
+2025-11-21 11:25:56 | INFO | PARSER | Keyword extraction progress: 1/955
+2025-11-21 11:25:56 | INFO | PARSER | Keyword extraction progress: 51/955
+2025-11-21 11:25:56 | INFO | PARSER | Keyword extraction progress: 101/955
+2025-11-21 11:25:56 | INFO | PARSER | Keyword extraction progress: 151/955
+2025-11-21 11:25:56 | INFO | PARSER | Keyword extraction progress: 201/955
+2025-11-21 11:25:57 | INFO | PARSER | Keyword extraction progress: 251/955
+2025-11-21 11:25:57 | INFO | PARSER | Keyword extraction progress: 301/955
+2025-11-21 11:25:57 | INFO | PARSER | Keyword extraction progress: 351/955
+2025-11-21 11:25:57 | INFO | PARSER | Keyword extraction progress: 401/955
+2025-11-21 11:25:57 | INFO | PARSER | Keyword extraction progress: 451/955
+2025-11-21 11:25:57 | INFO | PARSER | Keyword extraction progress: 501/955
+2025-11-21 11:25:57 | INFO | PARSER | Keyword extraction progress: 551/955
+2025-11-21 11:25:57 | INFO | PARSER | Keyword extraction progress: 601/955
+2025-11-21 11:25:57 | INFO | PARSER | Keyword extraction progress: 651/955
+2025-11-21 11:25:57 | INFO | PARSER | Keyword extraction progress: 701/955
+2025-11-21 11:25:57 | INFO | PARSER | Keyword extraction progress: 751/955
+2025-11-21 11:25:58 | INFO | PARSER | Keyword extraction progress: 801/955
+2025-11-21 11:25:58 | INFO | PARSER | Keyword extraction progress: 851/955
+2025-11-21 11:25:58 | INFO | PARSER | Keyword extraction progress: 901/955
+2025-11-21 11:25:58 | INFO | PARSER | Keyword extraction progress: 951/955
+2025-11-21 11:25:58 | INFO | PARSER | Keyword extraction complete.
+2025-11-21 11:25:58 | INFO | PARSER | Keywords added to chunks -> data/processed_csv/raw_blocks_chunked_keywords.json
+2025-11-21 11:25:58 | INFO | PARSER | Ingestion pipeline complete.
+2025-11-21 11:33:57 | INFO | PARSER | Starting ingestion for PDF: data\raw_pdfs\virtualbox_7.pdf
+2025-11-21 11:33:57 | INFO | PARSER | Opening PDF — data\raw_pdfs\virtualbox_7.pdf
+2025-11-21 11:33:57 | INFO | PARSER | Total pages detected: 545
+2025-11-21 11:33:57 | INFO | PARSER | TOC found — using HIERARCHICAL handler
+2025-11-21 11:33:57 | INFO | PARSER | Hierarchical TOC parsing complete — 571 detected
+2025-11-21 11:33:59 | INFO | PARSER | Structured parsing complete — 545 blocks created
+2025-11-21 11:33:59 | INFO | PARSER | Parsed 545 blocks from data\raw_pdfs\virtualbox_7.pdf
+2025-11-21 11:33:59 | INFO | PARSER | Raw blocks saved to data/processed_csv/raw_blocks.json
+2025-11-21 11:33:59 | INFO | PARSER | Chunking enabled.
+2025-11-21 11:35:17 | INFO | PARSER | Starting ingestion for PDF: data\raw_pdfs\virtualbox_7.pdf
+2025-11-21 11:35:17 | INFO | PARSER | Opening PDF — data\raw_pdfs\virtualbox_7.pdf
+2025-11-21 11:35:17 | INFO | PARSER | Total pages detected: 545
+2025-11-21 11:35:17 | INFO | PARSER | TOC found — using HIERARCHICAL handler
+2025-11-21 11:35:17 | INFO | PARSER | Hierarchical TOC parsing complete — 571 detected
+2025-11-21 11:35:19 | INFO | PARSER | Structured parsing complete — 545 blocks created
+2025-11-21 11:35:19 | INFO | PARSER | Parsed 545 blocks from data\raw_pdfs\virtualbox_7.pdf
+2025-11-21 11:35:19 | INFO | PARSER | Raw blocks saved to data/processed_csv/raw_blocks.json
+2025-11-21 11:35:19 | INFO | PARSER | Chunking enabled.
+2025-11-21 11:35:19 | INFO | PARSER | Starting chunking for source=virtualbox_7.pdf | total_blocks=545
+2025-11-21 11:35:19 | INFO | PARSER | Finished chunking for source=virtualbox_7.pdf | total_chunks=952
+2025-11-21 11:35:19 | INFO | PARSER | Created 952 chunks -> data/processed_csv/raw_blocks_chunked.json
+2025-11-21 11:35:19 | INFO | PARSER | Keyword extraction enabled.
+2025-11-21 11:35:19 | INFO | PARSER | Starting keyword extraction for 952 chunks | top_k=5
+2025-11-21 11:35:19 | INFO | PARSER | Keyword extraction progress: 1/952
+2025-11-21 11:35:20 | INFO | PARSER | Keyword extraction progress: 51/952
+2025-11-21 11:35:20 | INFO | PARSER | Keyword extraction progress: 101/952
+2025-11-21 11:35:20 | INFO | PARSER | Keyword extraction progress: 151/952
+2025-11-21 11:35:20 | INFO | PARSER | Keyword extraction progress: 201/952
+2025-11-21 11:35:20 | INFO | PARSER | Keyword extraction progress: 251/952
+2025-11-21 11:35:20 | INFO | PARSER | Keyword extraction progress: 301/952
+2025-11-21 11:35:20 | INFO | PARSER | Keyword extraction progress: 351/952
+2025-11-21 11:35:20 | INFO | PARSER | Keyword extraction progress: 401/952
+2025-11-21 11:35:20 | INFO | PARSER | Keyword extraction progress: 451/952
+2025-11-21 11:35:20 | INFO | PARSER | Keyword extraction progress: 501/952
+2025-11-21 11:35:20 | INFO | PARSER | Keyword extraction progress: 551/952
+2025-11-21 11:35:21 | INFO | PARSER | Keyword extraction progress: 601/952
+2025-11-21 11:35:21 | INFO | PARSER | Keyword extraction progress: 651/952
+2025-11-21 11:35:21 | INFO | PARSER | Keyword extraction progress: 701/952
+2025-11-21 11:35:21 | INFO | PARSER | Keyword extraction progress: 751/952
+2025-11-21 11:35:21 | INFO | PARSER | Keyword extraction progress: 801/952
+2025-11-21 11:35:21 | INFO | PARSER | Keyword extraction progress: 851/952
+2025-11-21 11:35:21 | INFO | PARSER | Keyword extraction progress: 901/952
+2025-11-21 11:35:21 | INFO | PARSER | Keyword extraction progress: 951/952
+2025-11-21 11:35:21 | INFO | PARSER | Keyword extraction complete.
+2025-11-21 11:35:21 | INFO | PARSER | Keywords added to chunks -> data/processed_csv/raw_blocks_chunked_keywords.json
+2025-11-21 11:35:21 | INFO | PARSER | Ingestion pipeline complete.
+2025-11-21 11:45:43 | INFO | EMBEDDER | Starting ChromaDB build | input=data/processed_csv/raw_blocks_chunked.json | persist=data/chroma_db | limit=None
+2025-11-21 11:46:26 | INFO | EMBEDDER | Starting ChromaDB build | input=data/processed_csv/raw_blocks_chunked.json | persist=data/chroma_db | limit=None
+2025-11-21 12:08:13 | INFO | EMBEDDER | Stored 952 chunks into data/chroma_db
+2025-11-21 12:11:07 | INFO | QUERY | Query received  how to install virtualbox in windows??
+2025-11-21 12:11:07 | INFO | QUERY | Relevant chapter detected  2 First Steps > 2.7 VirtualBox Manager
+2025-11-21 12:11:07 | INFO | QUERY | Chapter match time = 0.2189s
+2025-11-21 12:11:07 | INFO | QUERY | Applied filters  {'chapter': '2 First Steps > 2.7 VirtualBox Manager'}
+2025-11-21 12:11:08 | INFO | QUERY | Retrieved 2 docs in 0.2886s
+2025-11-21 12:11:37 | INFO | LLM | PROMPT SENT  
+You are a VMware expert. Answer STRICTLY based on this document.
+If answer is outside scope  ONLY reply 'I DON'T KNOW' tone.
+
+CONTEXT:
+2 First Steps Extension packs. Additional extension packs can be downloaded which extend the func- tionality of the Oracle VM VirtualBox base package. Currently, Oracle provides a single extension pack, available from: http://www.virtualbox.org. The extension pac
+2025-11-21 12:11:37 | INFO | LLM | LLM REPLY  To install Oracle VM VirtualBox on Windows hosts, follow these steps:
+
+1. In the Programs menu, click on the item in the VirtualBox group.
+2. Alternatively, you can also enter "VirtualBox" in the search box of the Start menu.
+
+This should launch the Oracle VM VirtualBox installation process, which includes installing the base package and any available extension packs that you wish to install.
+2025-11-21 12:11:37 | INFO | LLM | LLM Response Time = 29.4980s
+2025-11-21 12:11:37 | INFO | QUERY | TOTAL LATENCY = 30.0093s
+2025-11-21 12:12:05 | INFO | QUERY | Query received  system requirements of virtualbox
+2025-11-21 12:12:07 | INFO | QUERY | Relevant chapter detected  4 Configuring Virtual Machines > 4.3 Emulated Hardware
+2025-11-21 12:12:07 | INFO | QUERY | Chapter match time = 1.9351s
+2025-11-21 12:12:07 | INFO | QUERY | Applied filters  {'chapter': '4 Configuring Virtual Machines > 4.3 Emulated Hardware'}
+2025-11-21 12:12:08 | INFO | QUERY | Retrieved 2 docs in 0.1580s
+2025-11-21 12:12:38 | INFO | LLM | PROMPT SENT  
+You are a VMware expert. Answer STRICTLY based on this document.
+If answer is outside scope  ONLY reply 'I DON'T KNOW' tone.
+
+CONTEXT:
+4 Conguring Virtual Machines The previous command does the following: Species an Oracle Linux ISO as the installation ISO. Species a login name, full name, and login password for a default user on the guest OS. Note that the specied password is also used for the 
+2025-11-21 12:12:38 | INFO | LLM | LLM REPLY  The system requirements for VirtualBox include:
+
+- A CPU with a 64-bit processor or AMD64
+- 3 GB RAM 
+- At least a Pentium IV-class processor
+2025-11-21 12:12:38 | INFO | LLM | LLM Response Time = 30.4592s
+2025-11-21 12:12:38 | INFO | QUERY | TOTAL LATENCY = 32.5627s
+2025-11-21 12:13:12 | INFO | QUERY | Query received  nat network not working. also give me how to solve that problem
+2025-11-21 12:13:12 | INFO | QUERY | Relevant chapter detected  7 Virtual Networking > 7.11 Network Manager > 7.11.2 NAT Networks Tab
+2025-11-21 12:13:12 | INFO | QUERY | Chapter match time = 0.2937s
+2025-11-21 12:13:12 | INFO | QUERY | Applied filters  {'chapter': '7 Virtual Networking > 7.11 Network Manager > 7.11.2 NAT Networks Tab'}
+2025-11-21 12:13:13 | INFO | QUERY | Retrieved 2 docs in 0.1557s
+2025-11-21 12:13:31 | INFO | LLM | PROMPT SENT  
+You are a VMware expert. Answer STRICTLY based on this document.
+If answer is outside scope  ONLY reply 'I DON'T KNOW' tone.
+
+CONTEXT:
+7 Virtual Networking 7.10 Cloud Networks Cloud networks can be used for connections from a local VM to a subnet on a remote Oracle Cloud Infrastructure instance. See chapter 7.11.3, Cloud Networks Tab, page 139 for details of how to create and congure a cloud net
+2025-11-21 12:13:31 | INFO | LLM | LLM REPLY  I DON'T KNOW
+2025-11-21 12:13:31 | INFO | LLM | LLM Response Time = 18.8767s
+2025-11-21 12:13:31 | INFO | QUERY | TOTAL LATENCY = 19.3282s
+2025-11-21 12:22:17 | INFO | QUERY | Query received  how to install in windows?
+2025-11-21 12:22:18 | INFO | QUERY | Relevant chapter detected  3 Installation Details > 3.1 Installing on Windows Hosts > 3.1.2 Performing the Installation
+2025-11-21 12:22:18 | INFO | QUERY | Chapter match time = 0.2059s
+2025-11-21 12:22:18 | INFO | QUERY | Docs from matched chapter  2
+2025-11-21 12:22:18 | INFO | QUERY | Global docs retrieved  4
+2025-11-21 12:22:18 | INFO | QUERY | Total unique docs after merge  4
+2025-11-21 12:22:29 | INFO | QUERY | Final top documents after ranking  3
+2025-11-21 12:23:59 | INFO | LLM | PROMPT SENT  
+You are a technical expert.
+Answer ONLY based on the provided document.
+If answer is outside scope  reply ONLY: I DON'T KNOW.
+
+CONTEXT:
+3 Installation Details As installation of Oracle VM VirtualBox varies depending on your host operating system, the fol- lowing sections provide installation instructions for Windows, macOS, Linux, and Oracle Solaris. 3.1 Installing on Windows Hosts 3.1.1 Prerequ
+2025-11-21 12:23:59 | INFO | LLM | LLM REPLY  To install Oracle VM VirtualBox on a Windows host, follow these steps:
+
+1. Double-click on the executable file.
+2. Alternatively, extract the installer using the command: `VirtualBox-<version>-<revision>-Win.exe -extract`
+   Then, run the following command to perform the installation: `msiexec /i VirtualBox-<version>-<revision>-Win.msi`
+
+The installation process will display the Welcome dialog and allow you to choose where to install Oracle VM VirtualBox and which components to install.
+
+Note that the installer will create an Oracle VM VirtualBox group in the Windows Start menu, enabling you to launch the application and access its documentation. With standard settings, Oracle VM VirtualBox will be installed for all users on the local system. If this is not wanted, invoke the installer by extracting it using: `VirtualBox.exe -extract` and then run one of the following commands:
+
+* `msiexec /i VirtualBox-<version>-Win.msi ALLUSERS=2`
+* `msiexec /i VirtualBox-<version>-Win.msi ADDLOCAL=VBoxApplication`
+
+To install specific features, use the `ADDLOCAL` parameter. For example, to only install USB support along with the main binaries:
+
+* `VirtualBox.exe -msiparams ADDLOCAL=VBoxApplication,VBoxUSB msiexec /i VirtualBox-<version>-Win.msi ADDLOCAL=VBoxApplication,VBoxUSB`
+
+You can also choose between NDIS5 and NDIS6 host network lter drivers during installation using the `NETWORKTYPE` command. For example, to install the NDIS5 driver on Windows 7:
+
+* `VirtualBox.exe -msiparams NETWORKTYPE=NDIS5 msiexec /i VirtualBox-<version>-Win.msi NETWORKTYPE=NDIS5`
+
+Before installing, you may see warnings about unsigned drivers or similar. Click Continue for these warnings, as otherwise Oracle VM VirtualBox might not function correctly after installation.
+2025-11-21 12:23:59 | INFO | LLM | LLM Response Time = 89.2207s
+2025-11-21 12:23:59 | INFO | QUERY | TOTAL LATENCY = 101.1512s
+2025-11-21 12:43:52 | INFO | QUERY | Query received  difference between CNN and RNN models
+2025-11-21 12:43:54 | INFO | QUERY | Relevant chapter detected  2 First Steps > 2.3 Features Overview
+2025-11-21 12:43:54 | INFO | QUERY | Chapter match time = 1.6951s
+2025-11-21 12:43:54 | INFO | QUERY | Docs from matched chapter  2
+2025-11-21 12:43:54 | INFO | QUERY | Global docs retrieved  4
+2025-11-21 12:43:54 | INFO | QUERY | Total unique docs after merge  1
+2025-11-21 12:43:54 | INFO | QUERY | Final top documents after ranking  1
+2025-11-21 12:44:24 | INFO | LLM | PROMPT SENT  
+You are a technical expert.
+Answer ONLY based on the provided document.
+If answer is outside scope  reply ONLY: I DON'T KNOW.
+
+CONTEXT:
+
+
+QUESTION:
+difference between CNN and RNN models
+
+2025-11-21 12:44:24 | INFO | LLM | LLM REPLY  CNN (Convolutional Neural Networks) and RNN (Recurrent Neural Networks) are two types of neural network architectures used for different purposes.
+
+**Key differences:**
+
+1. **Input Data**: CNNs process sequential data with a fixed length, such as images, audio, or videos. In contrast, RNNs process sequential data with variable length, such as text, speech, or time series data.
+2. **Data Structure**: CNNs typically use a 3D convolutional layer to extract features from spatial hierarchies in data, whereas RNNs use recurrent connections to maintain dependencies between consecutive elements of the sequence.
+3. **Temporal Information**: RNNs are designed to capture temporal relationships and patterns in sequential data, making them suitable for tasks like speech recognition, machine translation, or natural language processing. CNNs, on the other hand, focus on spatial hierarchies and do not directly process temporal information.
+4. **Gradient Flow**: In CNNs, gradients flow from the output of each layer to the weights of previous layers. In RNNs, gradients flow through the entire sequence, which can lead to vanishing or exploding gradients if not handled properly.
+
+**When to use each:**
+
+* Use CNNs for image classification, object detection, segmentation, or other tasks where spatial hierarchies are important.
+* Use RNNs for tasks that require capturing temporal relationships, such as speech recognition, machine translation, natural language processing, or time series forecasting.
+2025-11-21 12:44:24 | INFO | LLM | LLM Response Time = 29.0987s
+2025-11-21 12:44:24 | INFO | QUERY | TOTAL LATENCY = 31.2138s
+2025-11-21 12:55:19 | INFO | QUERY | Query received  virtualbox windows install error
+2025-11-21 12:55:19 | INFO | QUERY | Relevant chapter detected  2 First Steps > 2.5 Installing Oracle VM VirtualBox and Extension Packs
+2025-11-21 12:55:19 | INFO | QUERY | Chapter match time = 0.1930s
+2025-11-21 12:55:19 | INFO | QUERY | Docs from matched chapter  1
+2025-11-21 12:55:20 | INFO | QUERY | Global docs retrieved  4
+2025-11-21 12:55:20 | INFO | QUERY | Total unique docs after merge  5
+2025-11-21 12:55:29 | INFO | QUERY | Final top documents after ranking  3
+2025-11-21 12:56:48 | INFO | LLM | PROMPT SENT  
+You are a technical expert.
+Answer ONLY based on the provided document.
+If answer is outside scope  reply ONLY: I DON'T KNOW.
+
+CONTEXT:
+3 Installation Details Depending on your Windows conguration, you may see warnings about unsigned drivers, or similar. Click Continue for these warnings, as otherwise Oracle VM VirtualBox might not function correctly after installation. The installer will create
+2025-11-21 12:56:48 | INFO | LLM | LLM REPLY  I DON'T KNOW.
+2025-11-21 12:56:48 | INFO | LLM | LLM Response Time = 78.5308s
+2025-11-21 12:56:48 | INFO | QUERY | TOTAL LATENCY = 88.5803s
+2025-11-21 12:58:18 | INFO | QUERY | Query received  virtualbox windows install error
+2025-11-21 12:58:18 | INFO | QUERY | Relevant chapter detected  2 First Steps > 2.5 Installing Oracle VM VirtualBox and Extension Packs
+2025-11-21 12:58:18 | INFO | QUERY | Chapter match time = 0.2532s
+2025-11-21 12:58:18 | INFO | QUERY | Docs from matched chapter  2
+2025-11-21 12:58:18 | INFO | QUERY | Global docs retrieved  4
+2025-11-21 12:58:18 | INFO | QUERY | Total unique docs after merge  6
+2025-11-21 12:58:27 | INFO | QUERY | Final top documents after ranking  3
+2025-11-21 12:58:29 | INFO | LLM | PROMPT SENT  
+You are a technical expert.
+Answer ONLY based on the provided document.
+If answer is outside scope  reply ONLY: I DON'T KNOW.
+
+CONTEXT:
+3 Installation Details Depending on your Windows conguration, you may see warnings about unsigned drivers, or similar. Click Continue for these warnings, as otherwise Oracle VM VirtualBox might not function correctly after installation. The installer will create
+2025-11-21 12:58:29 | INFO | LLM | LLM REPLY  I DON'T KNOW.
+2025-11-21 12:58:29 | INFO | LLM | LLM Response Time = 1.8777s
+2025-11-21 12:58:29 | INFO | QUERY | TOTAL LATENCY = 11.2860s
+2025-11-21 13:13:28 | INFO | QUERY | Query received  how to troubleshoot ubuntu virtual machine slow performance
+2025-11-21 13:13:28 | INFO | QUERY | Top chapters detected  ['13 Troubleshooting > 13.2 General Troubleshooting > 13.2.6 Poor Performance Caused by Host Power Management', '2 First Steps > 2.20 Monitoring of Virtual Machines', '4 Configuring Virtual Machines > 4.5 System Settings > 4.5.2 Processor Tab']
+2025-11-21 13:13:28 | INFO | QUERY | Chapter match time = 0.2697s
+2025-11-21 13:13:28 | INFO | QUERY | Docs from chapter '13 Troubleshooting > 13.2 General Troubleshooting > 13.2.6 Poor Performance Caused by Host Power Management'  2
+2025-11-21 13:13:28 | INFO | QUERY | Docs from chapter '2 First Steps > 2.20 Monitoring of Virtual Machines'  1
+2025-11-21 13:13:29 | INFO | QUERY | Docs from chapter '4 Configuring Virtual Machines > 4.5 System Settings > 4.5.2 Processor Tab'  2
+2025-11-21 13:13:29 | INFO | QUERY | Global docs retrieved  3
+2025-11-21 13:13:29 | INFO | QUERY | Total unique docs  7
+2025-11-21 13:13:40 | INFO | QUERY | Final docs used = 3
+2025-11-21 13:15:40 | INFO | LLM | PROMPT SENT  
+You are an expert assistant.
+Your task is to answer the question strictly using the provided context.
+
+RULES:
+- If the answer is fully contained in the context  answer clearly and directly.
+- If the context gives partial information  answer using ONLY that partial information.
+- If the answer is NOT in the context  reply EXACTLY: I DON'T KNOW
+- Do NOT use prior knowledge.
+- Do NOT guess or inf
+2025-11-21 13:15:40 | INFO | LLM | LLM REPLY  Slow performance in an Ubuntu Virtual Machine (VM) can be caused by various factors. Here are some steps to help you troubleshoot the issue:
+
+1. **Check the VM's hardware resources**:
+	* Ensure that the VM is allocated sufficient CPU, RAM, and disk space.
+	* Check if the VM's virtual hard drive is using a slow storage interface (e.g., SATA instead of NVMe).
+2. **Monitor system resource usage**:
+	* Use tools like `top`, `htop`, or `vmstat` to monitor the VM's CPU, memory, and disk usage.
+	* Check if any processes are consuming excessive resources.
+3. **Check for disk-intensive applications**:
+	* Ensure that disk-intensive applications (e.g., video editing software) are not running in the VM.
+	* Consider moving such applications to a host machine or allocating more disk space for the VM.
+4. **Verify the network connection**:
+	* Check if the VM's network adapter is properly configured and functioning correctly.
+	* Ensure that the VM has sufficient bandwidth allocated for its network traffic.
+5. **Check for conflicts with other VMs**:
+	* If you have multiple VMs running on the same host, check if there are any conflicts between them (e.g., competing for resources).
+	* Consider isolating the problematic VM or adjusting resource allocation for other VMs.
+6. **Update and patch the VM's operating system**:
+	* Ensure that the Ubuntu VM is up-to-date with the latest security patches and updates.
+	* Apply any necessary updates to improve performance and stability.
+7. **Check for issues with the virtualization software**:
+	* Verify that the VirtualBox software is properly installed, configured, and running correctly.
+	* Check for any known issues or bugs related to the version of VirtualBox you're using.
+8. **Disable unnecessary services**:
+	* Identify any unnecessary services or daemons running in the VM and disable them.
+	* Use tools like `systemctl` or `update-rc.d` to manage services and prevent them from starting automatically.
+9. **Increase disk I/O performance**:
+	* Consider using a faster storage interface (e.g., NVMe) for the VM's virtual hard drive.
+	* Adjust the disk I/O settings in VirtualBox to optimize performance for the specific workload.
+10. **Monitor and analyze logs**:
+	* Check the VirtualBox log files and system logs for any errors or warnings related to the VM's performance issues.
+	* Use tools like `sysdig` or `strace` to analyze system calls, network traffic, and other performance-related metrics.
+
+By following these steps, you should be able to identify and troubleshoot the underlying cause of slow performance in your Ubuntu Virtual Machine.
+2025-11-21 13:15:40 | INFO | LLM | LLM Response Time = 120.1475s
+2025-11-21 13:15:40 | INFO | QUERY | TOTAL LATENCY = 132.2594s
+2025-11-21 13:16:24 | INFO | QUERY | Query received  how to increase virtual machine memory dynamically
+2025-11-21 13:16:26 | INFO | QUERY | Top chapters detected  ['4 Configuring Virtual Machines > 4.7 Storage Settings', '10 Advanced Topics > 10.19 Oracle VM VirtualBox Watchdog > 10.19.1 Memory Ballooning Control', '5 Guest Additions > 5.10 Memory Overcommitment > 5.10.1 Memory Ballooning']
+2025-11-21 13:16:26 | INFO | QUERY | Chapter match time = 1.8564s
+2025-11-21 13:16:26 | INFO | QUERY | Docs from chapter '4 Configuring Virtual Machines > 4.7 Storage Settings'  2
+2025-11-21 13:16:26 | INFO | QUERY | Docs from chapter '10 Advanced Topics > 10.19 Oracle VM VirtualBox Watchdog > 10.19.1 Memory Ballooning Control'  1
+2025-11-21 13:16:26 | INFO | QUERY | Docs from chapter '5 Guest Additions > 5.10 Memory Overcommitment > 5.10.1 Memory Ballooning'  2
+2025-11-21 13:16:26 | INFO | QUERY | Global docs retrieved  3
+2025-11-21 13:16:26 | INFO | QUERY | Total unique docs  7
+2025-11-21 13:16:36 | INFO | QUERY | Final docs used = 3
+2025-11-21 13:17:39 | INFO | LLM | PROMPT SENT  
+You are an expert assistant.
+Your task is to answer the question strictly using the provided context.
+
+RULES:
+- If the answer is fully contained in the context  answer clearly and directly.
+- If the context gives partial information  answer using ONLY that partial information.
+- If the answer is NOT in the context  reply EXACTLY: I DON'T KNOW
+- Do NOT use prior knowledge.
+- Do NOT guess or inf
+2025-11-21 13:17:39 | INFO | LLM | LLM REPLY   Use VBoxManage controlvm "VM name" guestmemoryballoon n to increase the size of the memory balloon within a running virtual machine.
+2025-11-21 13:17:39 | INFO | LLM | LLM Response Time = 63.3579s
+2025-11-21 13:17:39 | INFO | QUERY | TOTAL LATENCY = 75.2067s
+2025-11-21 13:19:18 | INFO | QUERY | Query received  vm networking only host works no internet
+2025-11-21 13:19:18 | INFO | QUERY | Top chapters detected  ['13 Troubleshooting > 13.3 Windows Guests > 13.3.6 No Networking in Windows Vista Guests', '7 Virtual Networking > 7.7 Host-Only Networking', '13 Troubleshooting > 13.6 Windows Hosts > 13.6.6 Bridged Networking Adapters Missing']
+2025-11-21 13:19:18 | INFO | QUERY | Chapter match time = 0.2130s
+2025-11-21 13:19:19 | INFO | QUERY | Docs from chapter '13 Troubleshooting > 13.3 Windows Guests > 13.3.6 No Networking in Windows Vista Guests'  2
+2025-11-21 13:19:19 | INFO | QUERY | Docs from chapter '7 Virtual Networking > 7.7 Host-Only Networking'  2
+2025-11-21 13:19:19 | INFO | QUERY | Docs from chapter '13 Troubleshooting > 13.6 Windows Hosts > 13.6.6 Bridged Networking Adapters Missing'  2
+2025-11-21 13:19:19 | INFO | QUERY | Global docs retrieved  3
+2025-11-21 13:19:19 | INFO | QUERY | Total unique docs  6
+2025-11-21 13:19:31 | INFO | QUERY | Final docs used = 3
+2025-11-21 13:20:44 | INFO | LLM | PROMPT SENT  
+You are an expert assistant.
+Your task is to answer the question strictly using the provided context.
+
+RULES:
+- If the answer is fully contained in the context  answer clearly and directly.
+- If the context gives partial information  answer using ONLY that partial information.
+- If the answer is NOT in the context  reply EXACTLY: I DON'T KNOW
+- Do NOT use prior knowledge.
+- Do NOT guess or inf
+2025-11-21 13:20:44 | INFO | LLM | LLM REPLY   To enable a host-only network interface for a virtual machine (VM), use the following command: `VBoxManage modifyvm "VM Name" --nic generic`
+
+However, this does not specifically address the issue of not having internet access.
+
+To ensure that the VM has internet access through the host-only network, you need to specify the IP address range in `/etc/vbox/networks.conf`. By default, only 192.168.56.0/21 is allowed for IPv4 addresses.
+
+Add the following lines to `/etc/vbox/networks.conf`:
+```
+* 10.0.0.0/8
+```
+
+Restart the VirtualBox service or reload the configuration: `VBoxManage startvm "VM Name"`
+
+Please ensure that the VM has a valid IP address assigned in the VirtualBox settings and that the network configuration is correct.
+
+If you're still facing issues, please provide more details about your setup and the error messages you're seeing.
+2025-11-21 13:20:44 | INFO | LLM | LLM Response Time = 73.1613s
+2025-11-21 13:20:44 | INFO | QUERY | TOTAL LATENCY = 86.0196s
+2025-11-21 13:21:33 | INFO | QUERY | Query received  difference between CNN and RNN
+2025-11-21 13:21:33 | INFO | QUERY | Top chapters detected  ['2 First Steps > 2.3 Features Overview', '6 Virtual Storage > 6.5 Differencing Images', '2 First Steps > 2.2 Some Terminology']
+2025-11-21 13:21:33 | INFO | QUERY | Chapter match time = 0.2490s
+2025-11-21 13:21:33 | INFO | QUERY | Docs from chapter '2 First Steps > 2.3 Features Overview'  2
+2025-11-21 13:21:33 | INFO | QUERY | Docs from chapter '6 Virtual Storage > 6.5 Differencing Images'  2
+2025-11-21 13:21:33 | INFO | QUERY | Docs from chapter '2 First Steps > 2.2 Some Terminology'  2
+2025-11-21 13:21:33 | INFO | QUERY | Global docs retrieved  3
+2025-11-21 13:21:33 | INFO | QUERY | Total unique docs  6
+2025-11-21 13:21:42 | INFO | QUERY | Final docs used = 3
+2025-11-21 13:22:24 | INFO | LLM | PROMPT SENT  
+You are an expert assistant.
+Your task is to answer the question strictly using the provided context.
+
+RULES:
+- If the answer is fully contained in the context  answer clearly and directly.
+- If the context gives partial information  answer using ONLY that partial information.
+- If the answer is NOT in the context  reply EXACTLY: I DON'T KNOW
+- Do NOT use prior knowledge.
+- Do NOT guess or inf
+2025-11-21 13:22:24 | INFO | LLM | LLM REPLY  I DON'T KNOW
+2025-11-21 13:22:24 | INFO | LLM | LLM Response Time = 41.6279s
+2025-11-21 13:22:24 | INFO | QUERY | TOTAL LATENCY = 51.5862s
+2025-11-21 13:27:25 | INFO | QUERY | Query received  how to install python 
+2025-11-21 13:27:27 | INFO | QUERY | Top chapters detected  ['2 First Steps > 2.5 Installing Oracle VM VirtualBox and Extension Packs', '17 Third-Party Materials and Licenses > 17.2 Third-Party Licenses > 17.2.34 Python License', '2 First Steps > 2.4 Supported Host Operating Systems']
+2025-11-21 13:27:27 | INFO | QUERY | Chapter match time = 1.4495s
+2025-11-21 13:27:27 | INFO | QUERY | Docs from chapter '2 First Steps > 2.5 Installing Oracle VM VirtualBox and Extension Packs'  2
+2025-11-21 13:27:27 | INFO | QUERY | Docs from chapter '17 Third-Party Materials and Licenses > 17.2 Third-Party Licenses > 17.2.34 Python License'  2
+2025-11-21 13:27:27 | INFO | QUERY | Docs from chapter '2 First Steps > 2.4 Supported Host Operating Systems'  2
+2025-11-21 13:27:27 | INFO | QUERY | Global docs retrieved  3
+2025-11-21 13:27:27 | INFO | QUERY | Total unique docs  6
+2025-11-21 13:27:39 | INFO | QUERY | Final docs used = 3
+2025-11-21 13:29:15 | INFO | LLM | PROMPT SENT  
+You are an expert assistant.
+Your task is to answer the question strictly using the provided context.
+
+RULES:
+- If the answer is fully contained in the context  answer clearly and directly.
+- If the context gives partial information  answer using ONLY that partial information.
+- If the answer is NOT in the context  reply EXACTLY: I DON'T KNOW
+- Do NOT use prior knowledge.
+- Do NOT guess or inf
+2025-11-21 13:29:15 | INFO | LLM | LLM REPLY  To install Python, you'll need to choose an installation method that suits your needs. Here are some common ways to install Python:
+
+**Method 1: Installing from the official Python website**
+
+1. Go to the [Python download page](https://www.python.org/downloads/).
+2. Select the version of Python you want to install (e.g., Python 3.x or Python 2.x).
+3. Choose your operating system (Windows, macOS, or Linux).
+4. Download the installation package (e.g., `.exe` for Windows or `.pkg` for macOS).
+5. Run the installer and follow the prompts to complete the installation.
+
+**Method 2: Installing using a package manager**
+
+1. **For Ubuntu/Debian-based systems**: `sudo apt-get install python3`
+2. **For Red Hat/Fedora-based systems**: `sudo yum install python3`
+3. **For macOS (with Homebrew)**: `brew install python`
+
+**Method 3: Installing using a installer package**
+
+1. For Windows:
+	* Download and run the [Python Installer](https://www.python.org/downloads/get-py/).
+	* Follow the installation prompts to complete the setup.
+2. For macOS (using the Python installer package):
+	* Download the installer package from the official Python website.
+	* Run the installer and follow the prompts to complete the installation.
+
+**Method 4: Installing using a virtual environment**
+
+1. Install a virtual environment tool such as `virtualenv` or `conda`.
+2. Create a new virtual environment using the tool.
+3. Activate the virtual environment.
+4. Install Python using pip (the package installer for Python).
+
+Regardless of the method you choose, make sure to read and agree to the terms of service before installing Python.
+
+**Verify the installation**
+
+Once you've installed Python, verify that it's working correctly by opening a terminal or command prompt and typing:
+```
+python --version
+```
+or
+```
+python3 --version
+```
+This should display the version number of Python that was installed.
+2025-11-21 13:29:15 | INFO | LLM | LLM Response Time = 95.3461s
+2025-11-21 13:29:15 | INFO | QUERY | TOTAL LATENCY = 109.1342s
+2025-11-21 13:39:17 | INFO | QUERY | Query received  no internet, only host network working
+2025-11-21 13:39:17 | INFO | QUERY | Top chapters detected  ['13 Troubleshooting > 13.6 Windows Hosts > 13.6.6 Bridged Networking Adapters Missing', '13 Troubleshooting > 13.3 Windows Guests > 13.3.6 No Networking in Windows Vista Guests', '7 Virtual Networking > 7.7 Host-Only Networking']
+2025-11-21 13:39:17 | INFO | QUERY | Chapter match time = 0.2456s
+2025-11-21 13:39:17 | INFO | QUERY | Docs from chapter '13 Troubleshooting > 13.6 Windows Hosts > 13.6.6 Bridged Networking Adapters Missing'  2
+2025-11-21 13:39:17 | INFO | QUERY | Docs from chapter '13 Troubleshooting > 13.3 Windows Guests > 13.3.6 No Networking in Windows Vista Guests'  2
+2025-11-21 13:39:17 | INFO | QUERY | Docs from chapter '7 Virtual Networking > 7.7 Host-Only Networking'  2
+2025-11-21 13:39:17 | INFO | QUERY | Global docs retrieved  3
+2025-11-21 13:39:17 | INFO | QUERY | Total unique docs  6
+2025-11-21 13:39:30 | INFO | QUERY | Final docs used = 3
+2025-11-21 13:57:27 | INFO | QUERY | Query received  virtualbox windows install error
+2025-11-21 13:57:28 | INFO | QUERY | Top chapters detected  ['2 First Steps > 2.5 Installing Oracle VM VirtualBox and Extension Packs', '2 First Steps > 2.7 VirtualBox Manager', '4 Configuring Virtual Machines > 4.2 Unattended Guest Installation > 4.2.1 Using VBoxManage Commands for Unattended Guest Installation']
+2025-11-21 13:57:28 | INFO | QUERY | Chapter match time = 0.1964s
+2025-11-21 13:57:28 | INFO | QUERY | Docs from chapter '2 First Steps > 2.5 Installing Oracle VM VirtualBox and Extension Packs'  2
+2025-11-21 13:57:28 | INFO | QUERY | Docs from chapter '2 First Steps > 2.7 VirtualBox Manager'  2
+2025-11-21 13:57:28 | INFO | QUERY | Docs from chapter '4 Configuring Virtual Machines > 4.2 Unattended Guest Installation > 4.2.1 Using VBoxManage Commands for Unattended Guest Installation'  2
+2025-11-21 13:57:28 | INFO | QUERY | Global docs retrieved  3
+2025-11-21 13:57:28 | INFO | QUERY | Total unique docs  7
+2025-11-21 13:57:41 | INFO | QUERY | Final docs used = 3
+2025-11-21 13:58:05 | INFO | LLM | PROMPT SENT  
+You are an expert assistant.
+Your task is to answer the question strictly using the provided context.
+
+RULES:
+- If the answer is fully contained in the context  answer clearly and directly.
+- If the context gives partial information  answer using ONLY that partial information.
+- If the answer is NOT in the context  reply EXACTLY: I DON'T KNOW
+- Do NOT use prior knowledge.
+- Do NOT guess or inf
+2025-11-21 13:58:05 | INFO | LLM | LLM REPLY   I DON'T KNOW
+2025-11-21 13:58:05 | INFO | LLM | LLM Response Time = 18.1240s
+2025-11-21 13:58:05 | INFO | QUERY | TOTAL LATENCY = 37.5673s
+2025-11-21 14:07:31 | INFO | QUERY | Query received  virtualbox windows install error
+2025-11-21 14:07:31 | INFO | QUERY | Top chapters detected  ['2 First Steps > 2.5 Installing Oracle VM VirtualBox and Extension Packs', '2 First Steps > 2.7 VirtualBox Manager', '4 Configuring Virtual Machines > 4.2 Unattended Guest Installation > 4.2.1 Using VBoxManage Commands for Unattended Guest Installation']
+2025-11-21 14:07:31 | INFO | QUERY | Chapter match time = 0.1623s
+2025-11-21 14:07:31 | INFO | QUERY | Docs from chapter '2 First Steps > 2.5 Installing Oracle VM VirtualBox and Extension Packs'  2
+2025-11-21 14:07:31 | INFO | QUERY | Docs from chapter '2 First Steps > 2.7 VirtualBox Manager'  2
+2025-11-21 14:07:32 | INFO | QUERY | Docs from chapter '4 Configuring Virtual Machines > 4.2 Unattended Guest Installation > 4.2.1 Using VBoxManage Commands for Unattended Guest Installation'  2
+2025-11-21 14:07:32 | INFO | QUERY | Global docs retrieved  3
+2025-11-21 14:07:32 | INFO | QUERY | Total unique docs  7
+2025-11-21 14:07:49 | INFO | QUERY | Final docs used = 3
+2025-11-21 14:09:10 | INFO | LLM | PROMPT SENT  
+You are an expert assistant.
+Your task is to answer the question strictly using the provided context.
+
+RULES:
+- If the answer is fully contained in the context  answer clearly and directly.
+- If the context gives partial information  answer using ONLY that partial information.
+- If the answer is NOT in the context  reply EXACTLY: I DON'T KNOW
+- Do NOT use prior knowledge.
+- Do NOT guess or inf
+2025-11-21 14:09:10 | INFO | LLM | LLM REPLY   I DON'T KNOW
+2025-11-21 14:09:10 | INFO | LLM | LLM Response Time = 80.3365s
+2025-11-21 14:09:10 | INFO | QUERY | TOTAL LATENCY = 98.5072s
+2025-11-21 14:12:28 | INFO | QUERY | Query received  virtualbox windows install error
+2025-11-21 14:12:29 | INFO | QUERY | Top chapters detected  ['2 First Steps > 2.5 Installing Oracle VM VirtualBox and Extension Packs', '2 First Steps > 2.7 VirtualBox Manager', '4 Configuring Virtual Machines > 4.2 Unattended Guest Installation > 4.2.1 Using VBoxManage Commands for Unattended Guest Installation']
+2025-11-21 14:12:29 | INFO | QUERY | Chapter match time = 0.2679s
+2025-11-21 14:12:29 | INFO | QUERY | Docs from chapter '2 First Steps > 2.5 Installing Oracle VM VirtualBox and Extension Packs'  2
+2025-11-21 14:12:29 | INFO | QUERY | Docs from chapter '2 First Steps > 2.7 VirtualBox Manager'  2
+2025-11-21 14:12:29 | INFO | QUERY | Docs from chapter '4 Configuring Virtual Machines > 4.2 Unattended Guest Installation > 4.2.1 Using VBoxManage Commands for Unattended Guest Installation'  2
+2025-11-21 14:12:29 | INFO | QUERY | Global docs retrieved  3
+2025-11-21 14:12:29 | INFO | QUERY | Total unique docs  7
+2025-11-21 14:12:47 | INFO | QUERY | Final docs used = 3
+2025-11-21 14:13:59 | INFO | LLM | PROMPT SENT  
+You are an expert assistant.
+Your task is to answer the question strictly using the provided context.
+
+RULES:
+- If the answer is fully contained in the context  answer clearly and directly.
+- If the context gives partial information  answer using ONLY that partial information.
+- If the answer is NOT in the context  reply somthing like : i am not sure or idon't know ore ask for more details.
+- 
+2025-11-21 14:13:59 | INFO | LLM | LLM REPLY  * I am not sure or don't know for more details about the specific Windows installation error you are experiencing.
+2025-11-21 14:13:59 | INFO | LLM | LLM Response Time = 72.6359s
+2025-11-21 14:13:59 | INFO | QUERY | TOTAL LATENCY = 90.8622s
+2025-11-21 14:18:07 | INFO | QUERY | Query received  virtualbox windows install error
+2025-11-21 14:18:07 | INFO | QUERY | Top chapters detected  ['2 First Steps > 2.5 Installing Oracle VM VirtualBox and Extension Packs', '2 First Steps > 2.7 VirtualBox Manager', '4 Configuring Virtual Machines > 4.2 Unattended Guest Installation > 4.2.1 Using VBoxManage Commands for Unattended Guest Installation']
+2025-11-21 14:18:07 | INFO | QUERY | Chapter match time = 0.2029s
+2025-11-21 14:18:07 | INFO | QUERY | Docs from chapter '2 First Steps > 2.5 Installing Oracle VM VirtualBox and Extension Packs'  2
+2025-11-21 14:18:07 | INFO | QUERY | Docs from chapter '2 First Steps > 2.7 VirtualBox Manager'  2
+2025-11-21 14:18:07 | INFO | QUERY | Docs from chapter '4 Configuring Virtual Machines > 4.2 Unattended Guest Installation > 4.2.1 Using VBoxManage Commands for Unattended Guest Installation'  1
+2025-11-21 14:18:07 | INFO | QUERY | Global docs retrieved  3
+2025-11-21 14:18:07 | INFO | QUERY | Total unique docs  7
+2025-11-21 14:18:24 | INFO | QUERY | Final docs used = 3
+2025-11-21 14:19:35 | INFO | LLM | PROMPT SENT  
+You are a customer support technical expert.
+Answer STRICTLY using only the provided context.
+If answer is not found in context  reply in tone of : I DON'T KNOW.
+Do NOT use prior knowledge.
+Do NOT guess or hallucinate.
+
+-----------------------
+CONTEXT:
+3 Installation Details Depending on your Windows conguration, you may see warnings about unsigned drivers, or similar. Click Continue for these w
+2025-11-21 14:19:35 | INFO | LLM | LLM REPLY  I DON'T KNOW.
+2025-11-21 14:19:35 | INFO | LLM | LLM Response Time = 70.6475s
+2025-11-21 14:19:35 | INFO | QUERY | TOTAL LATENCY = 88.1000s
+2025-11-21 14:24:54 | INFO | QUERY | Query received  virtualbox windows install error
+2025-11-21 14:24:55 | INFO | QUERY | Top chapters detected  ['2 First Steps > 2.5 Installing Oracle VM VirtualBox and Extension Packs', '2 First Steps > 2.7 VirtualBox Manager', '4 Configuring Virtual Machines > 4.2 Unattended Guest Installation > 4.2.1 Using VBoxManage Commands for Unattended Guest Installation']
+2025-11-21 14:24:55 | INFO | QUERY | Chapter match time = 0.2209s
+2025-11-21 14:24:55 | INFO | QUERY | Docs from '2 First Steps > 2.5 Installing Oracle VM VirtualBox and Extension Packs'  0
+2025-11-21 14:24:55 | INFO | QUERY | Docs from '2 First Steps > 2.7 VirtualBox Manager'  0
+2025-11-21 14:24:55 | INFO | QUERY | Docs from '4 Configuring Virtual Machines > 4.2 Unattended Guest Installation > 4.2.1 Using VBoxManage Commands for Unattended Guest Installation'  1
+2025-11-21 14:24:55 | INFO | QUERY | Global docs  3
+2025-11-21 14:24:55 | INFO | QUERY | After dedup  1 docs
+2025-11-21 14:24:55 | INFO | QUERY | Final docs used = 1
+2025-11-21 14:25:08 | INFO | QUERY | Query received  virtualbox windows install error
+2025-11-21 14:25:08 | INFO | QUERY | Top chapters detected  ['2 First Steps > 2.5 Installing Oracle VM VirtualBox and Extension Packs', '2 First Steps > 2.7 VirtualBox Manager', '4 Configuring Virtual Machines > 4.2 Unattended Guest Installation > 4.2.1 Using VBoxManage Commands for Unattended Guest Installation']
+2025-11-21 14:25:08 | INFO | QUERY | Chapter match time = 0.2562s
+2025-11-21 14:25:08 | INFO | QUERY | Docs from '2 First Steps > 2.5 Installing Oracle VM VirtualBox and Extension Packs'  0
+2025-11-21 14:25:08 | INFO | QUERY | Docs from '2 First Steps > 2.7 VirtualBox Manager'  0
+2025-11-21 14:25:08 | INFO | QUERY | Docs from '4 Configuring Virtual Machines > 4.2 Unattended Guest Installation > 4.2.1 Using VBoxManage Commands for Unattended Guest Installation'  1
+2025-11-21 14:25:08 | INFO | QUERY | Global docs  3
+2025-11-21 14:25:08 | INFO | QUERY | After dedup  1 docs
+2025-11-21 14:25:08 | INFO | QUERY | Final docs used = 1
+2025-11-21 14:25:20 | INFO | QUERY | Query received  how to enable usb in virtualbox windows
+2025-11-21 14:25:20 | INFO | QUERY | Top chapters detected  ['4 Configuring Virtual Machines > 4.11 USB Support > 4.11.1 USB Settings', '4 Configuring Virtual Machines > 4.11 USB Support > 4.11.2 Implementation Notes for Windows and Linux Hosts', '2 First Steps > 2.7 VirtualBox Manager']
+2025-11-21 14:25:20 | INFO | QUERY | Chapter match time = 0.2580s
+2025-11-21 14:25:21 | INFO | QUERY | Docs from '4 Configuring Virtual Machines > 4.11 USB Support > 4.11.1 USB Settings'  1
+2025-11-21 14:25:21 | INFO | QUERY | Docs from '4 Configuring Virtual Machines > 4.11 USB Support > 4.11.2 Implementation Notes for Windows and Linux Hosts'  0
+2025-11-21 14:25:21 | INFO | QUERY | Docs from '2 First Steps > 2.7 VirtualBox Manager'  0
+2025-11-21 14:25:21 | INFO | QUERY | Global docs  3
+2025-11-21 14:25:21 | INFO | QUERY | After dedup  1 docs
+2025-11-21 14:25:21 | INFO | QUERY | Final docs used = 1
+2025-11-21 14:25:21 | INFO | QUERY | Query received  ubuntu slow performance virtual machine
+2025-11-21 14:25:21 | INFO | QUERY | Top chapters detected  ['13 Troubleshooting > 13.2 General Troubleshooting > 13.2.6 Poor Performance Caused by Host Power Management', '4 Configuring Virtual Machines > 4.5 System Settings > 4.5.2 Processor Tab', '4 Configuring Virtual Machines > 4.3 Emulated Hardware']
+2025-11-21 14:25:21 | INFO | QUERY | Chapter match time = 0.2268s
+2025-11-21 14:25:21 | INFO | QUERY | Docs from '13 Troubleshooting > 13.2 General Troubleshooting > 13.2.6 Poor Performance Caused by Host Power Management'  0
+2025-11-21 14:25:22 | INFO | QUERY | Docs from '4 Configuring Virtual Machines > 4.5 System Settings > 4.5.2 Processor Tab'  0
+2025-11-21 14:25:22 | INFO | QUERY | Docs from '4 Configuring Virtual Machines > 4.3 Emulated Hardware'  0
+2025-11-21 14:25:22 | INFO | QUERY | Global docs  3
+2025-11-21 14:25:22 | INFO | QUERY | After dedup  1 docs
+2025-11-21 14:25:24 | INFO | QUERY | Final docs used = 1
+2025-11-21 14:25:51 | INFO | LLM | PROMPT SENT  
+You are a technical expert works with customer service.
+Answer STRICTLY using only the provided context
+If answer is not in context  respond exactly: I DON'T KNOW.
+Do NOT use prior knowledge.
+Do NOT guess or hallucinate.
+
+-----------------------
+CONTEXT:
+2 First Steps 2.8.3 Create Virtual Machine Wizard: Hardware Use this page to congure hardware settings for the virtual machine. The following e
+2025-11-21 14:25:51 | INFO | LLM | LLM REPLY  I DON'T KNOW.
+2025-11-21 14:25:51 | INFO | LLM | LLM Response Time = 26.9341s
+2025-11-21 14:25:51 | INFO | QUERY | TOTAL LATENCY = 30.2449s
+2025-11-21 14:25:51 | INFO | QUERY | Query received  what is extension pack in virtualbox
+2025-11-21 14:25:52 | INFO | QUERY | Top chapters detected  ['2 First Steps > 2.5 Installing Oracle VM VirtualBox and Extension Packs', '3 Installation Details > 3.5 Installing an Extension Pack > 3.5.1 The Extension Pack Manager', '11 Technical Background > 11.2 Oracle VM VirtualBox Executables and Components']
+2025-11-21 14:25:52 | INFO | QUERY | Chapter match time = 0.2182s
+2025-11-21 14:25:52 | INFO | QUERY | Docs from '2 First Steps > 2.5 Installing Oracle VM VirtualBox and Extension Packs'  0
+2025-11-21 14:25:52 | INFO | QUERY | Docs from '3 Installation Details > 3.5 Installing an Extension Pack > 3.5.1 The Extension Pack Manager'  1
+2025-11-21 14:25:52 | INFO | QUERY | Docs from '11 Technical Background > 11.2 Oracle VM VirtualBox Executables and Components'  0
+2025-11-21 14:25:52 | INFO | QUERY | Global docs  3
+2025-11-21 14:25:52 | INFO | QUERY | After dedup  1 docs
+2025-11-21 14:25:52 | INFO | QUERY | Final docs used = 1
+2025-11-21 14:25:52 | INFO | QUERY | Query received  how to increase memory in vm
+2025-11-21 14:25:52 | INFO | QUERY | Top chapters detected  ['4 Configuring Virtual Machines > 4.7 Storage Settings', '5 Guest Additions > 5.10 Memory Overcommitment > 5.10.1 Memory Ballooning', '10 Advanced Topics > 10.19 Oracle VM VirtualBox Watchdog > 10.19.1 Memory Ballooning Control']
+2025-11-21 14:25:52 | INFO | QUERY | Chapter match time = 0.1805s
+2025-11-21 14:25:52 | INFO | QUERY | Docs from '4 Configuring Virtual Machines > 4.7 Storage Settings'  2
+2025-11-21 14:25:53 | INFO | QUERY | Docs from '5 Guest Additions > 5.10 Memory Overcommitment > 5.10.1 Memory Ballooning'  1
+2025-11-21 14:25:53 | INFO | QUERY | Docs from '10 Advanced Topics > 10.19 Oracle VM VirtualBox Watchdog > 10.19.1 Memory Ballooning Control'  2
+2025-11-21 14:25:53 | INFO | QUERY | Global docs  3
+2025-11-21 14:25:53 | INFO | QUERY | After dedup  1 docs
+2025-11-21 14:25:56 | INFO | QUERY | Final docs used = 1
+2025-11-21 14:26:35 | INFO | LLM | PROMPT SENT  
+You are a technical expert works with customer service.
+Answer STRICTLY using only the provided context
+If answer is not in context  respond exactly: I DON'T KNOW.
+Do NOT use prior knowledge.
+Do NOT guess or hallucinate.
+
+-----------------------
+CONTEXT:
+4 Conguring Virtual Machines Depending on the guest OS type that you selected when you created the VM, a new VM includes the following storage 
+2025-11-21 14:26:35 | INFO | LLM | LLM REPLY  I DON'T KNOW.
+2025-11-21 14:26:35 | INFO | LLM | LLM Response Time = 38.9599s
+2025-11-21 14:26:35 | INFO | QUERY | TOTAL LATENCY = 42.5221s
+2025-11-21 14:26:35 | INFO | QUERY | Query received  network only host works no internet
+2025-11-21 14:26:35 | INFO | QUERY | Top chapters detected  ['13 Troubleshooting > 13.6 Windows Hosts > 13.6.6 Bridged Networking Adapters Missing', '13 Troubleshooting > 13.3 Windows Guests > 13.3.6 No Networking in Windows Vista Guests', '7 Virtual Networking > 7.7 Host-Only Networking']
+2025-11-21 14:26:35 | INFO | QUERY | Chapter match time = 0.2200s
+2025-11-21 14:26:35 | INFO | QUERY | Docs from '13 Troubleshooting > 13.6 Windows Hosts > 13.6.6 Bridged Networking Adapters Missing'  0
+2025-11-21 14:26:35 | INFO | QUERY | Docs from '13 Troubleshooting > 13.3 Windows Guests > 13.3.6 No Networking in Windows Vista Guests'  0
+2025-11-21 14:26:35 | INFO | QUERY | Docs from '7 Virtual Networking > 7.7 Host-Only Networking'  0
+2025-11-21 14:26:35 | INFO | QUERY | Global docs  3
+2025-11-21 14:26:35 | INFO | QUERY | After dedup  1 docs
+2025-11-21 14:26:38 | INFO | QUERY | Final docs used = 1
+2025-11-21 14:27:06 | INFO | LLM | PROMPT SENT  
+You are a technical expert works with customer service.
+Answer STRICTLY using only the provided context
+If answer is not in context  respond exactly: I DON'T KNOW.
+Do NOT use prior knowledge.
+Do NOT guess or hallucinate.
+
+-----------------------
+CONTEXT:
+7 Virtual Networking 7.10 Cloud Networks Cloud networks can be used for connections from a local VM to a subnet on a remote Oracle Cloud Infras
+2025-11-21 14:27:06 | INFO | LLM | LLM REPLY  To enable a cloud network interface for a virtual machine, go to the Network page in the virtual machines Settings dialog and select an Adapter tab. Ensure that the Enable Network Adapter check box is selected and choose Cloud Network for the Attached To field.
+2025-11-21 14:27:06 | INFO | LLM | LLM Response Time = 27.7107s
+2025-11-21 14:27:06 | INFO | QUERY | TOTAL LATENCY = 31.3911s
+2025-11-21 14:33:28 | INFO | QUERY | Query received  virtualbox windows install error
+2025-11-21 14:36:13 | INFO | QUERY | Query received  virtualbox windows install error
+2025-11-21 14:36:13 | INFO | QUERY | Top chapters (raw)  [('2 First Steps > 2.5 Installing Oracle VM VirtualBox and Extension Packs', 0.7414585620261368), ('2 First Steps > 2.7 VirtualBox Manager', 0.7168187848006738), ('4 Configuring Virtual Machines > 4.2 Unattended Guest Installation > 4.2.1 Using VBoxManage Commands for Unattended Guest Installation', 0.7043310725339793), ('2 First Steps > 2.7 VirtualBox Manager > 2.7.4 Help Viewer', 0.6919576930826672), ('2 First Steps > 2.7 VirtualBox Manager > 2.7.3 VirtualBox Manager Tools', 0.6815254604063006)]
+2025-11-21 14:36:13 | INFO | QUERY | Avg score = 0.707
+2025-11-21 14:36:13 | INFO | QUERY | Filtered valid chapters  ['2 First Steps > 2.5 Installing Oracle VM VirtualBox and Extension Packs', '2 First Steps > 2.7 VirtualBox Manager']
+2025-11-21 14:36:13 | INFO | QUERY | Chapter match time = 0.2234s
+2025-11-21 14:36:13 | INFO | QUERY | Docs from '2 First Steps > 2.5 Installing Oracle VM VirtualBox and Extension Packs'  2
+2025-11-21 14:36:13 | INFO | QUERY | Docs from '2 First Steps > 2.7 VirtualBox Manager'  2
+2025-11-21 14:36:13 | INFO | QUERY | Global docs  3
+2025-11-21 14:36:13 | INFO | QUERY | Total unique docs  1
+2025-11-21 14:36:59 | INFO | LLM | PROMPT SENT  
+You are a Customer service technical expert.
+Answer STRICTLY based on the provided context.
+If information is incomplete  respond politely asking for clarification.
+Do NOT guess or use prior knowledge.
+
+--------------------
+CONTEXT:
+2 First Steps Intel hardware is required. See also chapter 15, Known Limitations, page 419. An installer package is available for macOS/Arm64, for systems using an A
+2025-11-21 14:36:59 | INFO | LLM | LLM REPLY  I'd be happy to help you with your VirtualBox installation issue on Windows.
+
+However, I would like to clarify a few things before we proceed. You mentioned that you're experiencing an error during the Windows installation of VirtualBox. Could you please tell me more about the specific error message you're seeing? Additionally, are you using a 32-bit or 64-bit version of Windows, and what is your current operating system version?
+
+Also, just to confirm, you've installed the Oracle VM VirtualBox package that's compatible with your Windows architecture (either x86/x64) and has met all the requirements mentioned in Chapter 15, Known Limitations, page 419.
+2025-11-21 14:36:59 | INFO | LLM | LLM Response Time = 45.3925s
+2025-11-21 14:36:59 | INFO | QUERY | TOTAL LATENCY = 45.9870s
+2025-11-21 14:37:29 | INFO | QUERY | Query received  what are the requirement mentionend??
+2025-11-21 14:37:29 | INFO | QUERY | Top chapters (raw)  [('2 First Steps > 2.2 Some Terminology', 0.5895058329259839), ('Unknown', 0.5789835190464568), ('15 Known Limitations > 15.2 Known Issues', 0.5306581187596805), ('2 First Steps > 2.3 Features Overview', 0.5295144691166712), ('1 Preface', 0.5237148079914111)]
+2025-11-21 14:37:29 | INFO | QUERY | Avg score = 0.550
+2025-11-21 14:37:29 | INFO | QUERY | Filtered valid chapters  ['2 First Steps > 2.2 Some Terminology', 'Unknown']
+2025-11-21 14:37:29 | INFO | QUERY | Chapter match time = 0.2161s
+2025-11-21 14:37:29 | INFO | QUERY | Docs from '2 First Steps > 2.2 Some Terminology'  2
+2025-11-21 14:37:29 | INFO | QUERY | Docs from 'Unknown'  2
+2025-11-21 14:37:29 | INFO | QUERY | Global docs  3
+2025-11-21 14:37:29 | INFO | QUERY | Total unique docs  1
+2025-11-21 14:37:36 | INFO | LLM | PROMPT SENT  
+You are a Customer service technical expert.
+Answer STRICTLY based on the provided context.
+If information is incomplete  respond politely asking for clarification.
+Do NOT guess or use prior knowledge.
+
+--------------------
+CONTEXT:
+
+--------------------
+
+USER QUESTION:
+what are the requirement mentionend??
+
+ANSWER:
+
+2025-11-21 14:37:36 | INFO | LLM | LLM REPLY  I'd be happy to help you with that question. However, I need a bit more information from you. Could you please clarify what "requirements" you're referring to? Are you asking about software requirements, product requirements, or something else? Please provide more context so I can better understand and provide an accurate answer.
+2025-11-21 14:37:36 | INFO | LLM | LLM Response Time = 6.7441s
+2025-11-21 14:37:36 | INFO | QUERY | TOTAL LATENCY = 7.3847s
+2025-11-21 14:38:00 | INFO | QUERY | Query received  difference between cnn and RNN
+2025-11-21 14:38:01 | INFO | QUERY | Top chapters (raw)  [('2 First Steps > 2.3 Features Overview', 0.44869783616113673), ('6 Virtual Storage > 6.5 Differencing Images', 0.4476731390288105), ('2 First Steps > 2.2 Some Terminology', 0.4384546270652395), ('2 First Steps > 2.18 Alternative Front-Ends', 0.43459378358336975), ('2 First Steps', 0.4311625082304501)]
+2025-11-21 14:38:01 | INFO | QUERY | Avg score = 0.440
+2025-11-21 14:38:01 | INFO | QUERY | Filtered valid chapters  ['2 First Steps > 2.3 Features Overview', '6 Virtual Storage > 6.5 Differencing Images']
+2025-11-21 14:38:01 | INFO | QUERY | Chapter match time = 0.1825s
+2025-11-21 14:38:01 | INFO | QUERY | Docs from '2 First Steps > 2.3 Features Overview'  2
+2025-11-21 14:38:01 | INFO | QUERY | Docs from '6 Virtual Storage > 6.5 Differencing Images'  2
+2025-11-21 14:38:01 | INFO | QUERY | Global docs  3
+2025-11-21 14:38:01 | INFO | QUERY | Total unique docs  1
+2025-11-21 14:38:08 | INFO | LLM | PROMPT SENT  
+You are a Customer service technical expert.
+Answer STRICTLY based on the provided context.
+If information is incomplete  respond politely asking for clarification.
+Do NOT guess or use prior knowledge.
+
+--------------------
+CONTEXT:
+
+--------------------
+
+USER QUESTION:
+difference between cnn and RNN
+
+ANSWER:
+
+2025-11-21 14:38:08 | INFO | LLM | LLM REPLY  I'd be happy to help clarify the difference between CNN (Convolutional Neural Network) and RNN (Recurrent Neural Network).
+
+Can you please provide more context or information on what specific aspects of these two types of networks you would like me to compare? Are you looking at their applications, architectures, or performance characteristics?
+2025-11-21 14:38:08 | INFO | LLM | LLM Response Time = 6.7680s
+2025-11-21 14:38:08 | INFO | QUERY | TOTAL LATENCY = 7.2535s
+2025-11-21 14:44:47 | INFO | QUERY | Query received  virtualbox windows install error
+2025-11-21 14:44:48 | INFO | QUERY | Top chapters (raw)  [('2 First Steps > 2.5 Installing Oracle VM VirtualBox and Extension Packs', 0.7414585620261368), ('2 First Steps > 2.7 VirtualBox Manager', 0.7168187848006738), ('4 Configuring Virtual Machines > 4.2 Unattended Guest Installation > 4.2.1 Using VBoxManage Commands for Unattended Guest Installation', 0.7043310725339793), ('2 First Steps > 2.7 VirtualBox Manager > 2.7.4 Help Viewer', 0.6919576930826672), ('2 First Steps > 2.7 VirtualBox Manager > 2.7.3 VirtualBox Manager Tools', 0.6815254604063006)]
+2025-11-21 14:44:48 | INFO | QUERY | 75th percentile = 0.717
+2025-11-21 14:44:48 | INFO | QUERY | Filtered valid chapters  ['2 First Steps > 2.5 Installing Oracle VM VirtualBox and Extension Packs', '2 First Steps > 2.7 VirtualBox Manager']
+2025-11-21 14:44:48 | INFO | QUERY | Chapter match time = 0.2422s
+2025-11-21 14:44:48 | INFO | QUERY | Docs from '2 First Steps > 2.5 Installing Oracle VM VirtualBox and Extension Packs'  2
+2025-11-21 14:44:48 | INFO | QUERY | Docs from '2 First Steps > 2.7 VirtualBox Manager'  2
+2025-11-21 14:44:48 | INFO | QUERY | Global docs  3
+2025-11-21 14:44:48 | INFO | QUERY | Total unique docs  6
+2025-11-21 14:45:53 | INFO | LLM | PROMPT SENT  
+You are a Customer service technical expert.
+Answer STRICTLY based on the provided context.
+If the information is incomplete  ask for clarification.
+Do NOT use prior knowledge.
+Do NOT guess or hallucinate.
+
+--------------------
+CONTEXT:
+2 First Steps Intel hardware is required. See also chapter 15, Known Limitations, page 419. An installer package is available for macOS/Arm64, for systems using 
+2025-11-21 14:45:53 | INFO | LLM | LLM REPLY  Based on the provided context, I'll answer your question strictly within the given boundaries.
+
+You're experiencing an installation error with VirtualBox on Windows. Can you please provide more information about the error message you're seeing, such as any specific error codes or messages? This will help me better understand the situation and provide a more accurate response.
+2025-11-21 14:45:53 | INFO | LLM | LLM Response Time = 65.2741s
+2025-11-21 14:45:53 | INFO | QUERY | TOTAL LATENCY = 65.9565s
+2025-11-21 14:46:43 | INFO | QUERY | Query received  its showing that .exe is not compactable in macos
+2025-11-21 14:46:43 | INFO | QUERY | Top chapters (raw)  [('9 VBoxManage > 9.55 vboximg-mount', 0.6066553038977398), ('9 VBoxManage > 9.42 VBoxManage sharedfolder', 0.6045141463289844), ('9 VBoxManage > 9.52 VBoxManage extpack', 0.6002685294760912), ('6 Virtual Storage > 6.11 vboximg-mount: A Utility for FUSE Mounting a Virtual Disk Image > 6.11.2 Mounting a Virtual Disk Image', 0.587611351864577), ('6 Virtual Storage > 6.11 vboximg-mount: A Utility for FUSE Mounting a Virtual Disk Image', 0.5837813017617477)]
+2025-11-21 14:46:43 | INFO | QUERY | 75th percentile = 0.605
+2025-11-21 14:46:43 | INFO | QUERY | Filtered valid chapters  ['9 VBoxManage > 9.55 vboximg-mount', '9 VBoxManage > 9.42 VBoxManage sharedfolder']
+2025-11-21 14:46:43 | INFO | QUERY | Chapter match time = 0.2628s
+2025-11-21 14:46:43 | INFO | QUERY | Docs from '9 VBoxManage > 9.55 vboximg-mount'  2
+2025-11-21 14:46:43 | INFO | QUERY | Docs from '9 VBoxManage > 9.42 VBoxManage sharedfolder'  1
+2025-11-21 14:46:43 | INFO | QUERY | Global docs  3
+2025-11-21 14:46:43 | INFO | QUERY | Total unique docs  6
+2025-11-21 14:48:19 | INFO | LLM | PROMPT SENT  
+You are a Customer service technical expert.
+Answer STRICTLY based on the provided context.
+If the information is incomplete  ask for clarification.
+Do NOT use prior knowledge.
+Do NOT guess or hallucinate.
+
+--------------------
+CONTEXT:
+9 VBoxManage Synopsis vboximg-mount <-? | -h | --help> vboximg-mount <--image=image-UUID> [--guest-filesystem] [-o=FUSE-option[,FUSE-option]] [--root] [--rw] <mo
+2025-11-21 14:48:19 | INFO | LLM | LLM REPLY  It seems like you're trying to mount a Windows executable file (.exe) on macOS using vboximg-mount command, but it's not compatible. The issue here is that .exe files are typically associated with Windows and may not be directly accessible or readable by macOS.
+
+To resolve this, you can try the following steps:
+
+1. Convert the .exe file to a different format: If the executable file contains native code, you might need to convert it to a more Mac-compatible format like ELF (Executable and Linkable Format) or Mach-O. You can use tools like `pyinstaller` or `cx_Freeze` for this purpose.
+
+2. Use vboximg-mount with --guest-filesystem option: This option enables experimental read-only support for guest filesystems. By using this option, you might be able to mount the .exe file as a read-only filesystem within the VM.
+
+3. Mount the entire drive (or partition) instead of the individual executable file: If possible, you can try mounting an entire Windows partition or drive within your virtual machine. This way, all files including the .exe file would be accessible from within the VM.
+
+4. Use a different tool for executing the .exe file: Depending on the purpose of running the .exe file, you might need to use a separate tool that can execute it without requiring direct access to the file itself.
+2025-11-21 14:48:19 | INFO | LLM | LLM Response Time = 95.6119s
+2025-11-21 14:48:19 | INFO | QUERY | TOTAL LATENCY = 96.2861s
+2025-11-21 14:48:40 | INFO | QUERY | Query received  how to install virtual box in linux
+2025-11-21 14:48:41 | INFO | QUERY | Top chapters (raw)  [('2 First Steps > 2.7 VirtualBox Manager', 0.7586785769373053), ('2 First Steps > 2.5 Installing Oracle VM VirtualBox and Extension Packs', 0.738288740834902), ('3 Installation Details > 3.3 Installing on Linux Hosts > 3.3.2 The Oracle VM VirtualBox Kernel Modules', 0.7340390294363169), ('2 First Steps > 2.7 VirtualBox Manager > 2.7.3 VirtualBox Manager Tools', 0.7183624040590249), ('2 First Steps > 2.7 VirtualBox Manager > 2.7.4 Help Viewer', 0.7172970407370733)]
+2025-11-21 14:48:41 | INFO | QUERY | 75th percentile = 0.738
+2025-11-21 14:48:41 | INFO | QUERY | Filtered valid chapters  ['2 First Steps > 2.7 VirtualBox Manager', '2 First Steps > 2.5 Installing Oracle VM VirtualBox and Extension Packs']
+2025-11-21 14:48:41 | INFO | QUERY | Chapter match time = 0.1883s
+2025-11-21 14:48:41 | INFO | QUERY | Docs from '2 First Steps > 2.7 VirtualBox Manager'  2
+2025-11-21 14:48:41 | INFO | QUERY | Docs from '2 First Steps > 2.5 Installing Oracle VM VirtualBox and Extension Packs'  2
+2025-11-21 14:48:41 | INFO | QUERY | Global docs  3
+2025-11-21 14:48:41 | INFO | QUERY | Total unique docs  6
+2025-11-21 14:49:42 | INFO | LLM | PROMPT SENT  
+You are a Customer service technical expert.
+Answer STRICTLY based on the provided context.
+If the information is incomplete  ask for clarification.
+Do NOT use prior knowledge.
+Do NOT guess or hallucinate.
+
+--------------------
+CONTEXT:
+2 First Steps Extension packs. Additional extension packs can be downloaded which extend the func- tionality of the Oracle VM VirtualBox base package. Currently,
+2025-11-21 14:49:42 | INFO | LLM | LLM REPLY  To install VirtualBox on Linux, you can use either the Oracle VM VirtualBox installer or a manual installation.
+
+**Using the Oracle VM VirtualBox Installer:**
+
+1. Visit the official VirtualBox download page and select the correct package for your Linux distribution (e.g., Ubuntu, Debian, Fedora, etc.).
+2. Follow the instructions provided on the download page to download the installer.
+3. Once downloaded, run the installer using a terminal window or from the command line.
+
+**Using Manual Installation:**
+
+1. Visit the official VirtualBox website and select the correct package for your Linux distribution (e.g., Ubuntu, Debian, Fedora, etc.).
+2. Download the installation files to your Linux system.
+3. Extract the contents of the downloaded archive to a suitable location on your system.
+4. Follow the instructions in the README file or documentation provided with the VirtualBox source code to manually compile and install VirtualBox.
+
+For most Linux distributions, you can use the package manager (e.g., apt-get for Ubuntu) to install the base package:
+
+```bash
+sudo apt-get install virtualbox-qt
+```
+
+Note: The installation process may vary depending on your specific Linux distribution and version. You can refer to the official VirtualBox documentation or online resources for more information.
+
+Also, please check that your system meets the minimum requirements listed in the documentation, including having an SSE2-capable CPU (Streaming SIMD Extensions 2).
+2025-11-21 14:49:42 | INFO | LLM | LLM Response Time = 60.7676s
+2025-11-21 14:49:42 | INFO | QUERY | TOTAL LATENCY = 61.3799s
+2025-11-21 14:56:57 | INFO | QUERY | Query received  exxit
+2025-11-21 14:56:58 | INFO | QUERY | Top chapters (raw)  [('Unknown', 0.6112358993398033), ('2 First Steps > 2.18 Alternative Front-Ends', 0.5272958337398224), ('Glossary', 0.522355849225878), ('2 First Steps > 2.11 Snapshots', 0.5108932749381898), ('5 Guest Additions > 5.7 Guest Properties', 0.5050021474953942)]
+2025-11-21 14:56:58 | INFO | QUERY | 75th percentile = 0.527
+2025-11-21 14:56:58 | INFO | QUERY | Filtered valid chapters  ['Unknown', '2 First Steps > 2.18 Alternative Front-Ends']
+2025-11-21 14:56:58 | INFO | QUERY | Chapter match time = 1.6475s
+2025-11-21 14:56:58 | INFO | QUERY | Docs from 'Unknown'  2
+2025-11-21 14:58:30 | INFO | QUERY | Query received  vm nat network not working, how to trouble shoot it?
+2025-11-21 14:58:30 | INFO | QUERY | Raw chapter scores  [('7 Virtual Networking > 7.11 Network Manager > 7.11.2 NAT Networks Tab', 0.7685131499730117), ('7 Virtual Networking > 7.3 Network Address Translation (NAT) > 7.3.2 PXE Booting with NAT', 0.7548945343396892), ("10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.6 Using the Host's Resolver as a DNS Proxy in NAT Mode", 0.751169837781138), ('10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.4 Binding NAT Sockets to a Specific Interface', 0.7441962483998301), ('7 Virtual Networking > 7.3 Network Address Translation (NAT)', 0.7293214059719083)]
+2025-11-21 14:58:30 | INFO | QUERY | max_score = 0.769
+2025-11-21 14:58:30 | INFO | QUERY | Chapters kept  ['7 Virtual Networking > 7.11 Network Manager > 7.11.2 NAT Networks Tab', '7 Virtual Networking > 7.3 Network Address Translation (NAT) > 7.3.2 PXE Booting with NAT', "10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.6 Using the Host's Resolver as a DNS Proxy in NAT Mode", '10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.4 Binding NAT Sockets to a Specific Interface', '7 Virtual Networking > 7.3 Network Address Translation (NAT)']
+2025-11-21 14:58:30 | INFO | QUERY | Chapter match time = 0.2557s
+2025-11-21 14:58:30 | INFO | QUERY | Docs from '7 Virtual Networking > 7.11 Network Manager > 7.11.2 NAT Networks Tab'  1
+2025-11-21 14:58:31 | INFO | QUERY | Docs from '7 Virtual Networking > 7.3 Network Address Translation (NAT) > 7.3.2 PXE Booting with NAT'  2
+2025-11-21 14:58:31 | INFO | QUERY | Docs from '10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.6 Using the Host's Resolver as a DNS Proxy in NAT Mode'  1
+2025-11-21 14:58:31 | INFO | QUERY | Docs from '10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.4 Binding NAT Sockets to a Specific Interface'  2
+2025-11-21 14:58:31 | INFO | QUERY | Docs from '7 Virtual Networking > 7.3 Network Address Translation (NAT)'  2
+2025-11-21 14:58:31 | INFO | QUERY | Total unique docs  6
+2025-11-21 14:58:34 | INFO | QUERY | Context similarity score = 0.700
+2025-11-21 15:00:04 | INFO | LLM | PROMPT SENT  
+You are a customer support technical expert.
+Answer STRICTLY using only the provided context.
+If the information is incomplete  ask a follow-up question.
+Do NOT hallucinate. Do NOT use outside knowledge.
+
+-------------------------
+CONTEXT:
+7 Virtual Networking 7.10 Cloud Networks Cloud networks can be used for connections from a local VM to a subnet on a remote Oracle Cloud Infrastructure instan
+2025-11-21 15:00:04 | INFO | LLM | LLM REPLY  To troubleshoot a VM with NAT network not working, you can follow these steps:
+
+1. Check the VirtualBox logs: Look for any error messages related to the NAT network in the VirtualBox logs.
+2. Verify NAT settings: Ensure that the NAT network is enabled and configured correctly. Check the Network Manager tool or the command line output of VBoxManage modifyvm to confirm the NAT settings.
+3. Check guest OS configuration: Make sure that the guest operating system is configured to use a static IP address if necessary, as NAT relies on DHCP.
+4. Verify port forwarding rules: Ensure that the port forwarding rules are correctly set up and configured for both incoming and outgoing traffic.
+5. Test connectivity manually: Try pinging or accessing the VM from another machine using its IP address and ports specified in the NAT settings.
+6. Check for conflicts with other networks: If multiple VMs or networks are sharing the same IP address space, it may cause issues with NAT.
+
+Next question?
+2025-11-21 15:00:04 | INFO | LLM | Response Time = 90.0107s
+2025-11-21 15:00:04 | INFO | QUERY | TOTAL LATENCY = 94.0593s
+2025-11-21 15:00:23 | INFO | QUERY | Query received  what is the difference between CNN and RNN models???
+2025-11-21 15:00:24 | INFO | QUERY | Raw chapter scores  [('2 First Steps > 2.2 Some Terminology', 0.43862954005430477), ('2 First Steps > 2.3 Features Overview', 0.43660527192566856), ('6 Virtual Storage > 6.5 Differencing Images', 0.42105895667479043), ('2 First Steps > 2.18 Alternative Front-Ends', 0.41517452594163307), ('2 First Steps', 0.41429254581113995)]
+2025-11-21 15:00:24 | INFO | QUERY | max_score = 0.439
+2025-11-21 15:00:24 | INFO | QUERY | Chapters kept  ['2 First Steps > 2.2 Some Terminology', '2 First Steps > 2.3 Features Overview', '6 Virtual Storage > 6.5 Differencing Images', '2 First Steps > 2.18 Alternative Front-Ends', '2 First Steps']
+2025-11-21 15:00:24 | INFO | QUERY | Chapter match time = 0.2575s
+2025-11-21 15:00:24 | INFO | QUERY | Docs from '2 First Steps > 2.2 Some Terminology'  2
+2025-11-21 15:00:24 | INFO | QUERY | Docs from '2 First Steps > 2.3 Features Overview'  2
+2025-11-21 15:00:24 | INFO | QUERY | Docs from '6 Virtual Storage > 6.5 Differencing Images'  2
+2025-11-21 15:00:24 | INFO | QUERY | Docs from '2 First Steps > 2.18 Alternative Front-Ends'  2
+2025-11-21 15:00:24 | INFO | QUERY | Docs from '2 First Steps'  1
+2025-11-21 15:00:24 | INFO | QUERY | Total unique docs  6
+2025-11-21 15:00:27 | INFO | QUERY | Context similarity score = 0.325
+2025-11-21 15:00:47 | INFO | QUERY | Query received  i meant how does car move very fast??
+2025-11-21 15:00:47 | INFO | QUERY | Raw chapter scores  [('Unknown', 0.3968978577031495), ('2 First Steps', 0.3874868845041268), ('2 First Steps > 2.2 Some Terminology', 0.38680729792295265), ('10 Advanced Topics > 10.11 Fine Tuning Timers and Time Synchronization > 10.11.2 Accelerate or Slow Down the Guest Clock', 0.359988803792213), ('5 Guest Additions > 5.4 Drag and Drop', 0.3521937537561282)]
+2025-11-21 15:00:47 | INFO | QUERY | max_score = 0.397
+2025-11-21 15:00:47 | INFO | QUERY | Chapters kept  []
+2025-11-21 15:00:47 | INFO | QUERY | Chapter match time = 0.1951s
+2025-11-21 15:01:04 | INFO | QUERY | Query received  how to install django in python environment
+2025-11-21 15:01:04 | INFO | QUERY | Raw chapter scores  [('2 First Steps > 2.15 Importing and Exporting Virtual Machines > 2.15.2 Importing an Appliance in OVF Format', 0.5080300699177991), ('17 Third-Party Materials and Licenses > 17.2 Third-Party Licenses > 17.2.34 Python License', 0.5014204956448154), ('2 First Steps > 2.16 Integrating with Oracle Cloud Infrastructure > 2.16.9 Importing an Instance from Oracle Cloud Infrastructure', 0.4939685243751265), ('2 First Steps > 2.15 Importing and Exporting Virtual Machines > 2.15.1 About the OVF Format', 0.4932655871910115), ('2 First Steps > 2.5 Installing Oracle VM VirtualBox and Extension Packs', 0.47812484970537694)]
+2025-11-21 15:01:04 | INFO | QUERY | max_score = 0.508
+2025-11-21 15:01:04 | INFO | QUERY | Chapters kept  ['2 First Steps > 2.15 Importing and Exporting Virtual Machines > 2.15.2 Importing an Appliance in OVF Format', '17 Third-Party Materials and Licenses > 17.2 Third-Party Licenses > 17.2.34 Python License', '2 First Steps > 2.16 Integrating with Oracle Cloud Infrastructure > 2.16.9 Importing an Instance from Oracle Cloud Infrastructure', '2 First Steps > 2.15 Importing and Exporting Virtual Machines > 2.15.1 About the OVF Format', '2 First Steps > 2.5 Installing Oracle VM VirtualBox and Extension Packs']
+2025-11-21 15:01:04 | INFO | QUERY | Chapter match time = 0.1811s
+2025-11-21 15:01:04 | INFO | QUERY | Docs from '2 First Steps > 2.15 Importing and Exporting Virtual Machines > 2.15.2 Importing an Appliance in OVF Format'  1
+2025-11-21 15:01:04 | INFO | QUERY | Docs from '17 Third-Party Materials and Licenses > 17.2 Third-Party Licenses > 17.2.34 Python License'  2
+2025-11-21 15:01:04 | INFO | QUERY | Docs from '2 First Steps > 2.16 Integrating with Oracle Cloud Infrastructure > 2.16.9 Importing an Instance from Oracle Cloud Infrastructure'  1
+2025-11-21 15:01:04 | INFO | QUERY | Docs from '2 First Steps > 2.15 Importing and Exporting Virtual Machines > 2.15.1 About the OVF Format'  1
+2025-11-21 15:01:04 | INFO | QUERY | Docs from '2 First Steps > 2.5 Installing Oracle VM VirtualBox and Extension Packs'  1
+2025-11-21 15:01:04 | INFO | QUERY | Total unique docs  6
+2025-11-21 15:01:07 | INFO | QUERY | Context similarity score = 0.456
+2025-11-21 15:03:25 | INFO | LLM | PROMPT SENT  
+You are a customer support technical expert.
+Answer STRICTLY using only the provided context.
+If the information is incomplete  ask a follow-up question.
+Do NOT hallucinate. Do NOT use outside knowledge.
+
+-------------------------
+CONTEXT:
+2 First Steps Note: OVF cannot describe snapshots that were taken for a virtual machine. As a result, when you export a virtual machine that has snapshots, on
+2025-11-21 15:03:25 | INFO | LLM | LLM REPLY  To install Django in a Python environment, follow these steps:
+
+**Method 1: Using pip (recommended)**
+
+1. Open your terminal or command prompt.
+2. Type the following command to check if you have pip installed: `pip --version`
+3. If pip is not installed, download and install it from the official website: <https://pip.pypa.io/en/stable/installation/>
+4. Once pip is installed, type the following command to install Django: `pip install django`
+
+**Method 2: Using a virtual environment**
+
+1. Open your terminal or command prompt.
+2. Create a new virtual environment using `python -m venv myenv` (replace "myenv" with your desired environment name).
+3. Activate the virtual environment using `source myenv/bin/activate` (on Linux/Mac) or `myenv\Scripts\activate` (on Windows).
+4. Install Django using pip: `pip install django`
+
+**Additional steps**
+
+1. Once Django is installed, create a new Django project by running `django-admin startproject myproject` (replace "myproject" with your desired project name).
+2. Navigate into the project directory: `cd myproject`
+3. Create a new Django app within the project: `python manage.py startapp myapp` (replace "myapp" with your desired app name).
+4. Run the Django development server to test your project: `python manage.py runserver`
+
+That's it! You have now installed Django in your Python environment.
+
+**Troubleshooting tips**
+
+* If you encounter issues installing Django, check the pip documentation for troubleshooting guides.
+* Make sure you are using a compatible version of Python and pip.
+* Try deleting the existing Django installation and reinstalling from scratch.
+* Consult online resources or seek help from the Django community forums if you encounter further issues.
+2025-11-21 15:03:25 | INFO | LLM | Response Time = 137.6201s
+2025-11-21 15:03:25 | INFO | QUERY | TOTAL LATENCY = 141.3832s
+2025-11-21 15:24:24 | INFO | QUERY | API startup: initializing Chroma and embeddings
+2025-11-21 15:25:09 | INFO | QUERY | API startup complete: cached 307 chapters.
+2025-11-21 15:25:46 | INFO | QUERY | Query received  how to install VirtualBox in Windows?
+2025-11-21 15:25:47 | INFO | QUERY | Raw chapter scores  [('2 First Steps > 2.7 VirtualBox Manager', 0.7898374633634926), ('2 First Steps > 2.5 Installing Oracle VM VirtualBox and Extension Packs', 0.762624054975604), ('2 First Steps > 2.7 VirtualBox Manager > 2.7.4 Help Viewer', 0.7582102533827757), ('4 Configuring Virtual Machines > 4.2 Unattended Guest Installation > 4.2.1 Using VBoxManage Commands for Unattended Guest Installation', 0.7521529645753546), ('2 First Steps > 2.7 VirtualBox Manager > 2.7.3 VirtualBox Manager Tools', 0.7495662115109815)]
+2025-11-21 15:25:47 | INFO | QUERY | max_score = 0.790
+2025-11-21 15:25:47 | INFO | QUERY | Chapters kept  ['2 First Steps > 2.7 VirtualBox Manager', '2 First Steps > 2.5 Installing Oracle VM VirtualBox and Extension Packs', '2 First Steps > 2.7 VirtualBox Manager > 2.7.4 Help Viewer', '4 Configuring Virtual Machines > 4.2 Unattended Guest Installation > 4.2.1 Using VBoxManage Commands for Unattended Guest Installation', '2 First Steps > 2.7 VirtualBox Manager > 2.7.3 VirtualBox Manager Tools']
+2025-11-21 15:25:47 | INFO | QUERY | Chapter match time = 0.2844s
+2025-11-21 15:25:47 | INFO | QUERY | Docs from '2 First Steps > 2.7 VirtualBox Manager'  2
+2025-11-21 15:25:47 | INFO | QUERY | Docs from '2 First Steps > 2.5 Installing Oracle VM VirtualBox and Extension Packs'  2
+2025-11-21 15:25:47 | INFO | QUERY | Docs from '2 First Steps > 2.7 VirtualBox Manager > 2.7.4 Help Viewer'  1
+2025-11-21 15:25:47 | INFO | QUERY | Docs from '4 Configuring Virtual Machines > 4.2 Unattended Guest Installation > 4.2.1 Using VBoxManage Commands for Unattended Guest Installation'  2
+2025-11-21 15:25:47 | INFO | QUERY | Docs from '2 First Steps > 2.7 VirtualBox Manager > 2.7.3 VirtualBox Manager Tools'  2
+2025-11-21 15:25:47 | INFO | QUERY | Total unique docs  7
+2025-11-21 15:25:51 | INFO | QUERY | Context similarity score = 0.730
+2025-11-21 15:26:50 | INFO | LLM | PROMPT SENT  
+You are a customer support technical expert.
+Answer STRICTLY using only the provided context.
+If the information is incomplete  ask a follow-up question.
+Do NOT hallucinate. Do NOT use outside knowledge.
+
+-------------------------
+CONTEXT:
+2 First Steps Extension packs. Additional extension packs can be downloaded which extend the func- tionality of the Oracle VM VirtualBox base package. Current
+2025-11-21 15:26:50 | INFO | LLM | LLM REPLY  To install VirtualBox in Windows, follow these steps:
+
+1. In the Programs menu, click on the item in the VirtualBox group.
+2. Alternatively, you can enter "VirtualBox" in the search box of the Start menu.
+
+This will launch the installation wizard for Oracle VM VirtualBox. Follow the prompts to complete the installation process.
+2025-11-21 15:26:50 | INFO | LLM | Response Time = 59.8339s
+2025-11-21 15:26:50 | INFO | QUERY | TOTAL LATENCY = 63.9256s
+2025-11-21 15:26:50 | INFO | QUERY | API /query completed in 63.9272s | query='how to install VirtualBox in Windows?'
+2025-11-21 15:34:21 | INFO | QUERY | Loaded 307 chapters into memory
+2025-11-21 15:34:32 | INFO | QUERY | Query received  installation requirement of virtualbox in macos
+2025-11-21 15:34:32 | INFO | QUERY | Raw chapter scores  [('4 Configuring Virtual Machines > 4.1 Supported Guest Operating Systems > 4.1.1 Mac OS X Guests', 0.72068918184596), ('2 First Steps > 2.5 Installing Oracle VM VirtualBox and Extension Packs', 0.6933313216658681), ('2 First Steps > 2.7 VirtualBox Manager', 0.6875736834937672), ('4 Configuring Virtual Machines > 4.2 Unattended Guest Installation > 4.2.1 Using VBoxManage Commands for Unattended Guest Installation', 0.6777986714996953), ('3 Installation Details > 3.2 Installing on macOS Hosts > 3.2.1 Performing the Installation', 0.6691930776954466)]
+2025-11-21 15:34:32 | INFO | QUERY | max_score = 0.721
+2025-11-21 15:34:32 | INFO | QUERY | Chapters kept  ['4 Configuring Virtual Machines > 4.1 Supported Guest Operating Systems > 4.1.1 Mac OS X Guests', '2 First Steps > 2.5 Installing Oracle VM VirtualBox and Extension Packs', '2 First Steps > 2.7 VirtualBox Manager', '4 Configuring Virtual Machines > 4.2 Unattended Guest Installation > 4.2.1 Using VBoxManage Commands for Unattended Guest Installation', '3 Installation Details > 3.2 Installing on macOS Hosts > 3.2.1 Performing the Installation']
+2025-11-21 15:34:32 | INFO | QUERY | Chapter match time = 0.1687s
+2025-11-21 15:34:32 | INFO | QUERY | Docs from '4 Configuring Virtual Machines > 4.1 Supported Guest Operating Systems > 4.1.1 Mac OS X Guests'  2
+2025-11-21 15:34:33 | INFO | QUERY | Docs from '2 First Steps > 2.5 Installing Oracle VM VirtualBox and Extension Packs'  2
+2025-11-21 15:34:33 | INFO | QUERY | Docs from '2 First Steps > 2.7 VirtualBox Manager'  2
+2025-11-21 15:34:33 | INFO | QUERY | Docs from '4 Configuring Virtual Machines > 4.2 Unattended Guest Installation > 4.2.1 Using VBoxManage Commands for Unattended Guest Installation'  2
+2025-11-21 15:34:33 | INFO | QUERY | Docs from '3 Installation Details > 3.2 Installing on macOS Hosts > 3.2.1 Performing the Installation'  2
+2025-11-21 15:34:33 | INFO | QUERY | Total unique docs  6
+2025-11-21 15:34:35 | INFO | QUERY | Context similarity score = 0.690
+2025-11-21 15:35:34 | INFO | LLM | PROMPT SENT  
+You are a customer support technical expert.
+Answer STRICTLY using only the provided context.
+If the information is incomplete  ask a follow-up question.
+Do NOT hallucinate. Do NOT use outside knowledge.
+
+-------------------------
+CONTEXT:
+4 Conguring Virtual Machines Operating System Comments Windows 11 (64-bit) Insider preview builds are not supported Windows 10 (32-bit and 64-bit) Insider pre
+2025-11-21 15:35:34 | INFO | LLM | LLM REPLY  For installing Oracle VM VirtualBox on a Mac, an Intel-based hardware is required. You can download the macOS/Arm64 installer package for Apple silicon CPU, which allows you to run some guest operating systems for Intel x86/x64 CPUs in emulation. However, please note that this package is currently available as a Developer Preview release, and the performance may be modest.
+2025-11-21 15:35:34 | INFO | LLM | Response Time = 58.2218s
+2025-11-21 15:35:34 | INFO | QUERY | TOTAL LATENCY = 61.4689s
+2025-11-21 15:35:54 | INFO | QUERY | Query received  please give me previous command in lsit
+2025-11-21 15:35:54 | INFO | QUERY | Raw chapter scores  [('2 First Steps > 2.17 Preferences', 0.5913681822290553), ('2 First Steps > 2.11 Snapshots', 0.5870197828433059), ('2 First Steps > 2.11 Snapshots > 2.11.2 Snapshot Contents', 0.5860488207619101), ('2 First Steps > 2.21 The Log Viewer', 0.5808951283142598), ('2 First Steps > 2.19 Soft Keyboard > 2.19.1 Using the Soft Keyboard', 0.5680235063989334)]
+2025-11-21 15:35:54 | INFO | QUERY | max_score = 0.591
+2025-11-21 15:35:54 | INFO | QUERY | Chapters kept  ['2 First Steps > 2.17 Preferences', '2 First Steps > 2.11 Snapshots', '2 First Steps > 2.11 Snapshots > 2.11.2 Snapshot Contents', '2 First Steps > 2.21 The Log Viewer', '2 First Steps > 2.19 Soft Keyboard > 2.19.1 Using the Soft Keyboard']
+2025-11-21 15:35:54 | INFO | QUERY | Chapter match time = 0.2126s
+2025-11-21 15:35:54 | INFO | QUERY | Docs from '2 First Steps > 2.17 Preferences'  2
+2025-11-21 15:35:54 | INFO | QUERY | Docs from '2 First Steps > 2.11 Snapshots'  1
+2025-11-21 15:35:54 | INFO | QUERY | Docs from '2 First Steps > 2.11 Snapshots > 2.11.2 Snapshot Contents'  2
+2025-11-21 15:35:55 | INFO | QUERY | Docs from '2 First Steps > 2.21 The Log Viewer'  2
+2025-11-21 15:35:55 | INFO | QUERY | Docs from '2 First Steps > 2.19 Soft Keyboard > 2.19.1 Using the Soft Keyboard'  1
+2025-11-21 15:35:55 | INFO | QUERY | Total unique docs  7
+2025-11-21 15:35:56 | INFO | QUERY | Context similarity score = 0.402
+2025-11-21 15:36:25 | INFO | LLM | PROMPT SENT  
+You are a customer support technical expert.
+Answer STRICTLY using only the provided context.
+If the information is incomplete  ask a follow-up question.
+Do NOT hallucinate. Do NOT use outside knowledge.
+
+-------------------------
+CONTEXT:
+
+
+2 First Steps The new cloud prole is added to the oci_config le in your Oracle VM VirtualBox global conguration directory. For example, this is $HOME/.Virtu
+2025-11-21 15:36:25 | INFO | LLM | LLM REPLY  The previous command was: 
+
+`VBoxManage cloud --provider="OCI" --profile="vbox-oci" list instances`
+2025-11-21 15:36:25 | INFO | LLM | Response Time = 28.7779s
+2025-11-21 15:36:25 | INFO | QUERY | TOTAL LATENCY = 30.9779s
+2025-11-21 15:36:42 | INFO | QUERY | Query received  difference between RNN and CNN
+
+2025-11-21 15:36:42 | INFO | QUERY | Raw chapter scores  [('2 First Steps > 2.3 Features Overview', 0.44570053686588673), ('6 Virtual Storage > 6.5 Differencing Images', 0.44053203673838454), ('2 First Steps > 2.2 Some Terminology', 0.4337001048567336), ('2 First Steps > 2.18 Alternative Front-Ends', 0.4336481208387162), ('7 Virtual Networking > 7.5 Bridged Networking', 0.42973283957146735)]
+2025-11-21 15:36:42 | INFO | QUERY | max_score = 0.446
+2025-11-21 15:36:42 | INFO | QUERY | Chapters kept  ['2 First Steps > 2.3 Features Overview', '6 Virtual Storage > 6.5 Differencing Images', '2 First Steps > 2.2 Some Terminology', '2 First Steps > 2.18 Alternative Front-Ends', '7 Virtual Networking > 7.5 Bridged Networking']
+2025-11-21 15:36:42 | INFO | QUERY | Chapter match time = 0.1641s
+2025-11-21 15:36:42 | INFO | QUERY | Docs from '2 First Steps > 2.3 Features Overview'  2
+2025-11-21 15:36:43 | INFO | QUERY | Docs from '6 Virtual Storage > 6.5 Differencing Images'  2
+2025-11-21 15:36:43 | INFO | QUERY | Docs from '2 First Steps > 2.2 Some Terminology'  2
+2025-11-21 15:36:43 | INFO | QUERY | Docs from '2 First Steps > 2.18 Alternative Front-Ends'  2
+2025-11-21 15:36:43 | INFO | QUERY | Docs from '7 Virtual Networking > 7.5 Bridged Networking'  2
+2025-11-21 15:36:43 | INFO | QUERY | Total unique docs  4
+2025-11-21 15:36:44 | INFO | QUERY | Context similarity score = 0.309
+2025-11-21 15:37:17 | INFO | QUERY | Query received  what is NAT network in virtualbox and how to use it
+2025-11-21 15:37:17 | INFO | QUERY | Raw chapter scores  [('7 Virtual Networking > 7.11 Network Manager > 7.11.2 NAT Networks Tab', 0.7821855966580751), ("10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.6 Using the Host's Resolver as a DNS Proxy in NAT Mode", 0.7748001903369581), ('10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.4 Binding NAT Sockets to a Specific Interface', 0.7710903547857715), ('7 Virtual Networking > 7.3 Network Address Translation (NAT)', 0.7684366979205152), ('9 VBoxManage > 9.47 VBoxManage natnetwork', 0.7667751673572027)]
+2025-11-21 15:37:17 | INFO | QUERY | max_score = 0.782
+2025-11-21 15:37:17 | INFO | QUERY | Chapters kept  ['7 Virtual Networking > 7.11 Network Manager > 7.11.2 NAT Networks Tab', "10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.6 Using the Host's Resolver as a DNS Proxy in NAT Mode", '10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.4 Binding NAT Sockets to a Specific Interface', '7 Virtual Networking > 7.3 Network Address Translation (NAT)', '9 VBoxManage > 9.47 VBoxManage natnetwork']
+2025-11-21 15:37:17 | INFO | QUERY | Chapter match time = 0.1940s
+2025-11-21 15:37:17 | INFO | QUERY | Docs from '7 Virtual Networking > 7.11 Network Manager > 7.11.2 NAT Networks Tab'  2
+2025-11-21 15:37:18 | INFO | QUERY | Docs from '10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.6 Using the Host's Resolver as a DNS Proxy in NAT Mode'  2
+2025-11-21 15:37:18 | INFO | QUERY | Docs from '10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.4 Binding NAT Sockets to a Specific Interface'  2
+2025-11-21 15:37:18 | INFO | QUERY | Docs from '7 Virtual Networking > 7.3 Network Address Translation (NAT)'  1
+2025-11-21 15:37:18 | INFO | QUERY | Docs from '9 VBoxManage > 9.47 VBoxManage natnetwork'  2
+2025-11-21 15:37:18 | INFO | QUERY | Total unique docs  7
+2025-11-21 15:37:19 | INFO | QUERY | Context similarity score = 0.781
+2025-11-21 15:38:11 | INFO | LLM | PROMPT SENT  
+You are a customer support technical expert.
+Answer STRICTLY using only the provided context.
+If the information is incomplete  ask a follow-up question.
+Do NOT hallucinate. Do NOT use outside knowledge.
+
+-------------------------
+CONTEXT:
+7 Virtual Networking 7.10 Cloud Networks Cloud networks can be used for connections from a local VM to a subnet on a remote Oracle Cloud Infrastructure instan
+2025-11-21 15:38:11 | INFO | LLM | LLM REPLY  In VirtualBox, a NAT (Network Address Translation) network is a type of virtual network that allows you to map a guest operating system's IP address to a host machine's IP address.
+
+To create a NAT network, follow these steps:
+
+1. Open the VirtualBox Manager and go to the Network page in the settings dialog for your virtual machine.
+2. Click on the NAT Networks tab.
+3. Click Create to add a new NAT network to the list.
+4. Follow the prompts to configure the NAT network settings.
+
+Alternatively, you can also enable NAT mode when creating or modifying a virtual machine using the command line:
+
+`VBoxManage modifyvm <VM-name> --natpf1 "your-nat-network-name,tcp,localhost,8080"`
+
+This will create a NAT network with the specified name and port mapping.
+
+Note that there are different types of NAT networks in VirtualBox, such as:
+
+* Bridged NAT: maps the guest IP to a physical host machine's IP.
+* Host-only NAT: maps the guest IP to a host machine's IP on a specific subnet.
+* Internal NAT: maps the guest IP to an internal IP address.
+
+The choice of NAT network type depends on your specific use case and requirements.
+2025-11-21 15:38:11 | INFO | LLM | Response Time = 51.9225s
+2025-11-21 15:38:11 | INFO | QUERY | TOTAL LATENCY = 54.2093s
+2025-11-21 16:00:43 | INFO | QUERY | Loaded 307 chapters into memory
+2025-11-21 16:01:36 | INFO | QUERY | Loaded 307 chapters into memory
+2025-11-21 16:01:36 | INFO | QUERY | Query received  how to install virtual box
+2025-11-21 16:01:36 | INFO | QUERY | Raw chapter scores  [('2 First Steps > 2.7 VirtualBox Manager', 0.7894257795069022), ('2 First Steps > 2.5 Installing Oracle VM VirtualBox and Extension Packs', 0.7831404836577603), ('2 First Steps > 2.7 VirtualBox Manager > 2.7.4 Help Viewer', 0.7643992758298273), ('2 First Steps > 2.7 VirtualBox Manager > 2.7.3 VirtualBox Manager Tools', 0.7554988448002528), ('4 Configuring Virtual Machines > 4.2 Unattended Guest Installation > 4.2.1 Using VBoxManage Commands for Unattended Guest Installation', 0.747359077651419)]
+2025-11-21 16:01:36 | INFO | QUERY | max_score = 0.789
+2025-11-21 16:01:36 | INFO | QUERY | Chapters kept  ['2 First Steps > 2.7 VirtualBox Manager', '2 First Steps > 2.5 Installing Oracle VM VirtualBox and Extension Packs', '2 First Steps > 2.7 VirtualBox Manager > 2.7.4 Help Viewer', '2 First Steps > 2.7 VirtualBox Manager > 2.7.3 VirtualBox Manager Tools', '4 Configuring Virtual Machines > 4.2 Unattended Guest Installation > 4.2.1 Using VBoxManage Commands for Unattended Guest Installation']
+2025-11-21 16:01:36 | INFO | QUERY | Chapter match time = 0.2503s
+2025-11-21 16:01:36 | INFO | QUERY | Docs from '2 First Steps > 2.7 VirtualBox Manager'  2
+2025-11-21 16:01:36 | INFO | QUERY | Docs from '2 First Steps > 2.5 Installing Oracle VM VirtualBox and Extension Packs'  1
+2025-11-21 16:01:36 | INFO | QUERY | Docs from '2 First Steps > 2.7 VirtualBox Manager > 2.7.4 Help Viewer'  1
+2025-11-21 16:01:36 | INFO | QUERY | Docs from '2 First Steps > 2.7 VirtualBox Manager > 2.7.3 VirtualBox Manager Tools'  2
+2025-11-21 16:01:37 | INFO | QUERY | Docs from '4 Configuring Virtual Machines > 4.2 Unattended Guest Installation > 4.2.1 Using VBoxManage Commands for Unattended Guest Installation'  2
+2025-11-21 16:01:37 | INFO | QUERY | Total unique docs  7
+2025-11-21 16:01:40 | INFO | QUERY | Context similarity score = 0.738
+2025-11-21 16:02:30 | INFO | LLM | PROMPT SENT  
+You are a customer support technical expert.
+Answer STRICTLY using only the provided context.
+If the information is incomplete  ask a follow-up question.
+Do NOT hallucinate. Do NOT use outside knowledge.
+
+-------------------------
+CONTEXT:
+2 First Steps Extension packs. Additional extension packs can be downloaded which extend the func- tionality of the Oracle VM VirtualBox base package. Current
+2025-11-21 16:02:30 | INFO | LLM | LLM REPLY  To install Oracle VM VirtualBox, you can follow these steps:
+
+1. Go to http://www.virtualbox.org for the latest extension packs available for download.
+2. Download the desired extension pack(s) and follow the instructions on how to install it, as mentioned in chapter 3.5, Installing an Extension Pack, page 65.
+
+Note that the installation method may vary depending on your host OS, so you can refer to chapter 3, Installation Details, page 55 for more information.
+2025-11-21 16:02:30 | INFO | LLM | Response Time = 50.5502s
+2025-11-21 16:02:30 | INFO | QUERY | TOTAL LATENCY = 54.5867s
+2025-11-21 16:25:46 | INFO | QUERY | Query received  how to install NAT network in virtualbox
+2025-11-21 16:25:46 | INFO | QUERY | Raw chapter scores  []
+2025-11-21 16:25:57 | INFO | QUERY | Query received  how to install NAT network in VirtualBox
+2025-11-21 16:25:57 | INFO | QUERY | Raw chapter scores  []
+2025-11-21 16:49:38 | INFO | QUERY | Query received  NAT network not working in virtualbox. how to fix it?
+2025-11-21 16:49:38 | INFO | QUERY | Raw chapter scores  []
+2025-11-21 16:52:01 | INFO | QUERY | Query received  NAT network not working in virtualbox. how to fix it?
+2025-11-21 16:52:01 | INFO | QUERY | Raw chapter scores  []
+2025-11-21 16:53:44 | INFO | PARSER | Opening PDF — data/processed_csv/ScanFront_400_Series_Instructions_EN.pdf
+2025-11-21 16:53:44 | INFO | PARSER | Total pages detected: 216
+2025-11-21 16:53:44 | INFO | PARSER | TOC found — using HIERARCHICAL handler
+2025-11-21 16:53:44 | INFO | PARSER | Hierarchical TOC parsing complete — 208 detected
+2025-11-21 16:53:45 | INFO | PARSER | Structured parsing complete — 216 blocks created
+2025-11-21 16:53:45 | INFO | PARSER | Starting chunking for source=ScanFront_400_Series_Instructions_EN.pdf | total_blocks=216
+2025-11-21 16:53:45 | INFO | PARSER | Finished chunking for source=ScanFront_400_Series_Instructions_EN.pdf | total_chunks=232
+2025-11-21 17:05:53 | INFO | PARSER | Opening PDF — data/processed_csv/virtualbox_6.pdf
+2025-11-21 17:05:54 | INFO | PARSER | Total pages detected: 226
+2025-11-21 17:05:54 | INFO | PARSER | TOC found — using HIERARCHICAL handler
+2025-11-21 17:05:54 | INFO | PARSER | Hierarchical TOC parsing complete — 310 detected
+2025-11-21 17:05:54 | INFO | PARSER | Structured parsing complete — 221 blocks created
+2025-11-21 17:05:54 | INFO | PARSER | Starting chunking for source=virtualbox_6.pdf | total_blocks=221
+2025-11-21 17:05:54 | INFO | PARSER | Finished chunking for source=virtualbox_6.pdf | total_chunks=389
+2025-11-21 17:10:12 | INFO | PARSER | Opening PDF — data/processed_csv/virtualbox_6.pdf
+2025-11-21 17:10:12 | INFO | PARSER | Total pages detected: 226
+2025-11-21 17:10:12 | INFO | PARSER | TOC found — using HIERARCHICAL handler
+2025-11-21 17:10:12 | INFO | PARSER | Hierarchical TOC parsing complete — 310 detected
+2025-11-21 17:10:12 | INFO | PARSER | Structured parsing complete — 221 blocks created
+2025-11-21 17:10:12 | INFO | PARSER | Starting chunking for source=virtualbox_6.pdf | total_blocks=221
+2025-11-21 17:10:12 | INFO | PARSER | Finished chunking for source=virtualbox_6.pdf | total_chunks=389
+2025-11-21 17:10:14 | INFO | PARSER | Opening PDF — data/processed_csv/virtualbox_6.pdf
+2025-11-21 17:10:14 | INFO | PARSER | Total pages detected: 226
+2025-11-21 17:10:14 | INFO | PARSER | TOC found — using HIERARCHICAL handler
+2025-11-21 17:10:14 | INFO | PARSER | Hierarchical TOC parsing complete — 310 detected
+2025-11-21 17:10:15 | INFO | PARSER | Structured parsing complete — 221 blocks created
+2025-11-21 17:10:15 | INFO | PARSER | Starting chunking for source=virtualbox_6.pdf | total_blocks=221
+2025-11-21 17:10:15 | INFO | PARSER | Finished chunking for source=virtualbox_6.pdf | total_chunks=389
+2025-11-21 17:21:51 | INFO | QUERY | Query received  print not working. paper is stuck
+2025-11-21 17:21:51 | INFO | QUERY | Raw chapter scores  []
+2025-11-21 17:22:07 | INFO | QUERY | Query received  paper is jammed
+2025-11-21 17:22:07 | INFO | QUERY | Raw chapter scores  []
+2025-11-21 17:22:46 | INFO | QUERY | Query received  paper is jammed. not working
+2025-11-21 17:22:46 | INFO | QUERY | Raw chapter scores  []
+2025-11-21 17:22:55 | INFO | QUERY | Query received  how to install in windows
+2025-11-21 17:22:55 | INFO | QUERY | Raw chapter scores  []
+2025-11-21 17:23:14 | INFO | QUERY | Query received  how to install virtualbox in windows
+2025-11-21 17:23:14 | INFO | QUERY | Raw chapter scores  []
+2025-11-21 17:25:10 | INFO | QUERY | Query received  how to install virtualbox in windows
+2025-11-21 17:25:10 | INFO | QUERY | Raw chapter scores  []
+2025-11-21 17:27:22 | INFO | QUERY | Query received  how to install virtualbox in windows
+2025-11-21 17:27:22 | INFO | QUERY | Raw chapter scores  []
+2025-11-21 17:29:29 | INFO | QUERY | Query received  chat hai
+2025-11-21 17:29:29 | INFO | QUERY | Raw chapter scores  []
+2025-11-21 17:30:40 | INFO | QUERY | Query received  hai hello
+2025-11-21 17:30:40 | INFO | QUERY | Raw chapter scores  []
+2025-11-21 17:31:49 | INFO | QUERY | Query received  hai hello
+2025-11-21 17:31:49 | INFO | QUERY | Raw chapter scores  []
+2025-11-21 17:33:05 | INFO | QUERY | Query received  hai
+2025-11-21 17:33:05 | INFO | QUERY | Raw chapter scores  []
+2025-11-21 17:33:49 | INFO | QUERY | Query received  hai hello
+2025-11-21 17:33:49 | INFO | QUERY | Raw chapter scores  []
+2025-11-21 17:35:18 | INFO | QUERY | Query received  how to install virtualbox in windows
+2025-11-21 17:35:18 | INFO | QUERY | Raw chapter scores  []
+2025-11-21 17:35:55 | INFO | QUERY | Query received  how to install virtualbox in windows
+2025-11-21 17:35:55 | INFO | QUERY | Raw chapter scores  []
+2025-11-21 17:37:51 | INFO | QUERY | Query received  how to install virtualbox in windows
+2025-11-21 17:37:51 | INFO | QUERY | Raw chapter scores  [('Chapter\xa01\xa0First Steps > 1.5.\xa0Installing Oracle VM VirtualBox and Extension Packs', 0.7853996637296559), ('Chapter\xa01\xa0First Steps > 1.6.\xa0Starting Oracle VM VirtualBox', 0.7816779936106256), ('Oracle VM VirtualBox', 0.774496394092408), ('Chapter\xa02\xa0Installation Details > 2.3.\xa0Installing on Linux Hosts > 2.3.3.\xa0Performing the Installation > 2.3.3.2.\xa0Using the Alternative Generic Installer (VirtualBox.run)', 0.7714879082544828), ('Chapter\xa01\xa0First Steps > 1.8.\xa0Running Your Virtual Machine', 0.7071984002866232)]
+2025-11-21 17:37:51 | INFO | QUERY | max_score = 0.785
+2025-11-21 17:37:51 | INFO | QUERY | Chapters kept  ['Chapter\xa01\xa0First Steps > 1.5.\xa0Installing Oracle VM VirtualBox and Extension Packs', 'Chapter\xa01\xa0First Steps > 1.6.\xa0Starting Oracle VM VirtualBox', 'Oracle VM VirtualBox', 'Chapter\xa02\xa0Installation Details > 2.3.\xa0Installing on Linux Hosts > 2.3.3.\xa0Performing the Installation > 2.3.3.2.\xa0Using the Alternative Generic Installer (VirtualBox.run)', 'Chapter\xa01\xa0First Steps > 1.8.\xa0Running Your Virtual Machine']
+2025-11-21 17:37:51 | INFO | QUERY | Chapter match time = 0.1570s
+2025-11-21 17:37:51 | INFO | QUERY | Docs from 'Chapter1First Steps > 1.5.Installing Oracle VM VirtualBox and Extension Packs'  1
+2025-11-21 17:37:51 | INFO | QUERY | Docs from 'Chapter1First Steps > 1.6.Starting Oracle VM VirtualBox'  2
+2025-11-21 17:37:52 | INFO | QUERY | Docs from 'Oracle VM VirtualBox'  2
+2025-11-21 17:37:52 | INFO | QUERY | Docs from 'Chapter2Installation Details > 2.3.Installing on Linux Hosts > 2.3.3.Performing the Installation > 2.3.3.2.Using the Alternative Generic Installer (VirtualBox.run)'  2
+2025-11-21 17:37:52 | INFO | QUERY | Docs from 'Chapter1First Steps > 1.8.Running Your Virtual Machine'  1
+2025-11-21 17:37:52 | INFO | QUERY | Total unique docs  8
+2025-11-21 17:37:55 | INFO | QUERY | Context similarity score = 0.653
+2025-11-21 17:38:47 | INFO | LLM | PROMPT SENT  
+You are a customer support technical expert.
+Answer STRICTLY using only the provided context.
+If the information is incomplete  ask a follow-up question.
+Do NOT hallucinate. Do NOT use outside knowledge.
+
+-------------------------
+CONTEXT:
+Host CPU Requirements 10.13 (High Sierra) 10.14 (Mojave) Intel hardware is required. See also Known Limitations. Linux hosts (64-bit). Includes the following:
+2025-11-21 17:38:47 | INFO | LLM | LLM REPLY  To install VirtualBox on a Windows host, follow these steps:
+
+1. Go to the Start menu and type "VirtualBox" in the search box.
+2. Click on the "VirtualBox" item in the search results.
+
+Alternatively, you can also find the VirtualBox program in the Programs menu.
+
+3. Double-click on the VirtualBox icon to start the installation process.
+
+Follow the on-screen instructions to complete the installation.
+2025-11-21 17:38:47 | INFO | LLM | Response Time = 52.4112s
+2025-11-21 17:38:47 | INFO | QUERY | TOTAL LATENCY = 56.2687s
+2025-11-21 17:40:50 | INFO | QUERY | Query received  how to install virtualbox in windows
+2025-11-21 17:40:50 | INFO | QUERY | Raw chapter scores  []
+2025-11-21 17:41:25 | INFO | QUERY | Query received  how to install virtualbox in windows
+2025-11-21 17:41:25 | INFO | QUERY | Raw chapter scores  []
+2025-11-21 17:44:48 | INFO | QUERY | Query received  how to install virtualbox in windows
+
+
+2025-11-21 17:44:48 | INFO | QUERY | Raw chapter scores  []
+2025-11-21 17:52:24 | INFO | QUERY | Query received  system requirements for windows and macos
+
+
+2025-11-21 17:52:25 | INFO | QUERY | Raw chapter scores  [('2 First Steps > 2.4 Supported Host Operating Systems', 0.6760436264498715), ('4 Configuring Virtual Machines > 4.1 Supported Guest Operating Systems > 4.1.1 Mac OS X Guests', 0.6559926542924664), ('15 Known Limitations > 15.2 Known Issues', 0.6354328028669427), ('4 Configuring Virtual Machines > 4.1 Supported Guest Operating Systems', 0.6342027213057804), ('4 Configuring Virtual Machines > 4.3 Emulated Hardware', 0.6304726380519342)]
+2025-11-21 17:52:25 | INFO | QUERY | max_score = 0.676
+2025-11-21 17:52:25 | INFO | QUERY | Chapters kept  ['2 First Steps > 2.4 Supported Host Operating Systems', '4 Configuring Virtual Machines > 4.1 Supported Guest Operating Systems > 4.1.1 Mac OS X Guests', '15 Known Limitations > 15.2 Known Issues', '4 Configuring Virtual Machines > 4.1 Supported Guest Operating Systems', '4 Configuring Virtual Machines > 4.3 Emulated Hardware']
+2025-11-21 17:52:25 | INFO | QUERY | Chapter match time = 0.1561s
+2025-11-21 17:52:25 | INFO | QUERY | Docs from '2 First Steps > 2.4 Supported Host Operating Systems'  1
+2025-11-21 17:52:25 | INFO | QUERY | Docs from '4 Configuring Virtual Machines > 4.1 Supported Guest Operating Systems > 4.1.1 Mac OS X Guests'  2
+2025-11-21 17:52:25 | INFO | QUERY | Docs from '15 Known Limitations > 15.2 Known Issues'  2
+2025-11-21 17:52:25 | INFO | QUERY | Docs from '4 Configuring Virtual Machines > 4.1 Supported Guest Operating Systems'  0
+2025-11-21 17:52:25 | INFO | QUERY | Docs from '4 Configuring Virtual Machines > 4.3 Emulated Hardware'  1
+2025-11-21 17:52:25 | INFO | QUERY | Total unique docs  4
+2025-11-21 17:52:27 | INFO | QUERY | Context similarity score = 0.617
+2025-11-21 17:53:22 | INFO | LLM | PROMPT SENT  
+You are a customer support technical expert.
+Answer STRICTLY using only the provided context.
+If the information is incomplete  ask a follow-up question.
+Do NOT hallucinate. Do NOT use outside knowledge.
+
+-------------------------
+CONTEXT:
+
+
+4 Conguring Virtual Machines Operating System Comments Windows 11 (64-bit) Insider preview builds are not supported Windows 10 (32-bit and 64-bit) Insider p
+2025-11-21 17:53:22 | INFO | LLM | LLM REPLY  The system requirements for Windows are not explicitly listed in the provided context.
+
+However, I can provide you with the list of supported operating systems that include Windows:
+
+- Windows 7 (32-bit and 64-bit)
+- Windows Vista SP2 and later (32-bit and 64-bit)
+- Windows XP (32-bit)
+
+Please note that there may be additional system requirements or specifications for each version of Windows.
+2025-11-21 17:53:22 | INFO | LLM | Response Time = 55.7724s
+2025-11-21 17:53:22 | INFO | QUERY | TOTAL LATENCY = 57.9410s
+2025-11-21 17:55:00 | INFO | QUERY | Query received  NAT not working, how to fix it?
+2025-11-21 17:55:00 | INFO | QUERY | Raw chapter scores  [('7 Virtual Networking > 7.11 Network Manager > 7.11.2 NAT Networks Tab', 0.7021026632390048), ('7 Virtual Networking > 7.3 Network Address Translation (NAT)', 0.6701525133589102), ('7 Virtual Networking > 7.3 Network Address Translation (NAT) > 7.3.2 PXE Booting with NAT', 0.6676428980148471), ("10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.6 Using the Host's Resolver as a DNS Proxy in NAT Mode", 0.664370173745306), ('10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.4 Binding NAT Sockets to a Specific Interface', 0.6509842724947538)]
+2025-11-21 17:55:00 | INFO | QUERY | max_score = 0.702
+2025-11-21 17:55:00 | INFO | QUERY | Chapters kept  ['7 Virtual Networking > 7.11 Network Manager > 7.11.2 NAT Networks Tab', '7 Virtual Networking > 7.3 Network Address Translation (NAT)', '7 Virtual Networking > 7.3 Network Address Translation (NAT) > 7.3.2 PXE Booting with NAT', "10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.6 Using the Host's Resolver as a DNS Proxy in NAT Mode", '10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.4 Binding NAT Sockets to a Specific Interface']
+2025-11-21 17:55:00 | INFO | QUERY | Chapter match time = 0.2002s
+2025-11-21 17:55:00 | INFO | QUERY | Docs from '7 Virtual Networking > 7.11 Network Manager > 7.11.2 NAT Networks Tab'  1
+2025-11-21 17:55:00 | INFO | QUERY | Docs from '7 Virtual Networking > 7.3 Network Address Translation (NAT)'  0
+2025-11-21 17:55:01 | INFO | QUERY | Docs from '7 Virtual Networking > 7.3 Network Address Translation (NAT) > 7.3.2 PXE Booting with NAT'  0
+2025-11-21 17:55:01 | INFO | QUERY | Docs from '10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.6 Using the Host's Resolver as a DNS Proxy in NAT Mode'  0
+2025-11-21 17:55:01 | INFO | QUERY | Docs from '10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.4 Binding NAT Sockets to a Specific Interface'  1
+2025-11-21 17:55:01 | INFO | QUERY | Total unique docs  1
+2025-11-21 17:55:01 | INFO | QUERY | Context similarity score = 0.316
+2025-11-21 17:55:12 | INFO | QUERY | Query received  NAT networking not working in virtualbox
+2025-11-21 17:55:12 | INFO | QUERY | Raw chapter scores  [('10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.4 Binding NAT Sockets to a Specific Interface', 0.7693655637446503), ("10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.6 Using the Host's Resolver as a DNS Proxy in NAT Mode", 0.7691473625560856), ('7 Virtual Networking > 7.11 Network Manager > 7.11.2 NAT Networks Tab', 0.7641400824123306), ('9 VBoxManage > 9.47 VBoxManage natnetwork', 0.7540589964938906), ('7 Virtual Networking > 7.3 Network Address Translation (NAT) > 7.3.2 PXE Booting with NAT', 0.7422604606415223)]
+2025-11-21 17:55:12 | INFO | QUERY | max_score = 0.769
+2025-11-21 17:55:12 | INFO | QUERY | Chapters kept  ['10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.4 Binding NAT Sockets to a Specific Interface', "10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.6 Using the Host's Resolver as a DNS Proxy in NAT Mode", '7 Virtual Networking > 7.11 Network Manager > 7.11.2 NAT Networks Tab', '9 VBoxManage > 9.47 VBoxManage natnetwork', '7 Virtual Networking > 7.3 Network Address Translation (NAT) > 7.3.2 PXE Booting with NAT']
+2025-11-21 17:55:12 | INFO | QUERY | Chapter match time = 0.1821s
+2025-11-21 17:55:12 | INFO | QUERY | Docs from '10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.4 Binding NAT Sockets to a Specific Interface'  1
+2025-11-21 17:55:13 | INFO | QUERY | Docs from '10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.6 Using the Host's Resolver as a DNS Proxy in NAT Mode'  0
+2025-11-21 17:55:13 | INFO | QUERY | Docs from '7 Virtual Networking > 7.11 Network Manager > 7.11.2 NAT Networks Tab'  1
+2025-11-21 17:55:13 | INFO | QUERY | Docs from '9 VBoxManage > 9.47 VBoxManage natnetwork'  1
+2025-11-21 17:55:13 | INFO | QUERY | Docs from '7 Virtual Networking > 7.3 Network Address Translation (NAT) > 7.3.2 PXE Booting with NAT'  0
+2025-11-21 17:55:13 | INFO | QUERY | Total unique docs  2
+2025-11-21 17:55:14 | INFO | QUERY | Context similarity score = 0.721
+2025-11-21 17:55:35 | INFO | LLM | PROMPT SENT  
+You are a customer support technical expert.
+Answer STRICTLY using only the provided context.
+If the information is incomplete  ask a follow-up question.
+Do NOT hallucinate. Do NOT use outside knowledge.
+
+-------------------------
+CONTEXT:
+
+
+9 VBoxManage --ipv6 Enables or disables IPv6. By default, IPv6 is disabled and IPv4 is enabled. --loopback-4=<rule> Enables an IPv4 loopback interface by us
+2025-11-21 17:55:35 | INFO | LLM | LLM REPLY  To troubleshoot NAT networking issues in VirtualBox, I'd like to know more about your setup. Can you please provide me with the output of `VBoxManage natnetwork list` command? This will help me identify which NAT network service is not working and if there are any specific errors or warnings reported by the command.
+2025-11-21 17:55:35 | INFO | LLM | Response Time = 21.2267s
+2025-11-21 17:55:35 | INFO | QUERY | TOTAL LATENCY = 23.0667s
+2025-11-21 17:56:07 | INFO | QUERY | Query received  differenciate between CNN and RNN in python.
+2025-11-21 17:56:07 | INFO | QUERY | Raw chapter scores  [('6 Virtual Storage > 6.5 Differencing Images', 0.4841189080545513), ('2 First Steps > 2.3 Features Overview', 0.45749447259845766), ('2 First Steps > 2.18 Alternative Front-Ends', 0.4405049978816642), ('2 First Steps > 2.2 Some Terminology', 0.4398477402648241), ('Unknown', 0.4359459372603015)]
+2025-11-21 17:56:07 | INFO | QUERY | max_score = 0.484
+2025-11-21 17:56:07 | INFO | QUERY | Chapters kept  []
+2025-11-21 17:56:07 | INFO | QUERY | Chapter match time = 0.1700s
+2025-11-21 18:02:49 | INFO | QUERY | Query received  difference between AI and ML in machine leanring
+2025-11-21 18:02:49 | INFO | QUERY | Raw chapter scores  [('13 Troubleshooting > 13.1 Procedures and Tools > 13.1.1 Categorizing and Isolating Problems', 0.5150690721835394), ('2 First Steps > 2.3 Features Overview', 0.5050068432817139), ('2 First Steps > 2.2 Some Terminology', 0.5022918676192194), ('2 First Steps > 2.18 Alternative Front-Ends', 0.5018206478304426), ('2 First Steps', 0.4717987629053124)]
+2025-11-21 18:02:49 | INFO | QUERY | max_score = 0.515
+2025-11-21 18:02:49 | INFO | QUERY | Chapters kept  []
+2025-11-21 18:02:49 | INFO | QUERY | Chapter match time = 0.1810s
+2025-11-21 18:03:16 | INFO | QUERY | Query received  how to set NAT network for internet
+2025-11-21 18:03:16 | INFO | QUERY | Raw chapter scores  [('7 Virtual Networking > 7.11 Network Manager > 7.11.2 NAT Networks Tab', 0.7644311686088171), ('7 Virtual Networking > 7.3 Network Address Translation (NAT)', 0.7503472297425807), ('7 Virtual Networking > 7.3 Network Address Translation (NAT) > 7.3.2 PXE Booting with NAT', 0.7338987523372713), ('10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.4 Binding NAT Sockets to a Specific Interface', 0.7009535891600285), ("10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.6 Using the Host's Resolver as a DNS Proxy in NAT Mode", 0.7007695089689183)]
+2025-11-21 18:03:16 | INFO | QUERY | max_score = 0.764
+2025-11-21 18:03:16 | INFO | QUERY | Chapters kept  ['7 Virtual Networking > 7.11 Network Manager > 7.11.2 NAT Networks Tab', '7 Virtual Networking > 7.3 Network Address Translation (NAT)', '7 Virtual Networking > 7.3 Network Address Translation (NAT) > 7.3.2 PXE Booting with NAT', '10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.4 Binding NAT Sockets to a Specific Interface', "10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.6 Using the Host's Resolver as a DNS Proxy in NAT Mode"]
+2025-11-21 18:03:16 | INFO | QUERY | Chapter match time = 0.1787s
+2025-11-21 18:03:16 | INFO | QUERY | Docs from '7 Virtual Networking > 7.11 Network Manager > 7.11.2 NAT Networks Tab'  2
+2025-11-21 18:03:16 | INFO | QUERY | Docs from '7 Virtual Networking > 7.3 Network Address Translation (NAT)'  2
+2025-11-21 18:03:16 | INFO | QUERY | Docs from '7 Virtual Networking > 7.3 Network Address Translation (NAT) > 7.3.2 PXE Booting with NAT'  2
+2025-11-21 18:03:16 | INFO | QUERY | Docs from '10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.4 Binding NAT Sockets to a Specific Interface'  2
+2025-11-21 18:03:17 | INFO | QUERY | Docs from '10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.6 Using the Host's Resolver as a DNS Proxy in NAT Mode'  2
+2025-11-21 18:03:17 | INFO | QUERY | Total unique docs  6
+2025-11-21 18:03:18 | INFO | QUERY | Context similarity score = 0.638
+2025-11-21 18:04:02 | INFO | LLM | PROMPT SENT  
+You are a customer support technical expert.
+Answer STRICTLY using only the provided context.
+If the information is incomplete  ask a follow-up question.
+Do NOT hallucinate. Do NOT use outside knowledge.
+
+-------------------------
+CONTEXT:
+7 Virtual Networking 7.10 Cloud Networks Cloud networks can be used for connections from a local VM to a subnet on a remote Oracle Cloud Infrastructure instan
+2025-11-21 18:04:02 | INFO | LLM | LLM REPLY  To enable a NAT network interface for internet access in a virtual machine, follow these steps:
+
+1. Go to the Network page in the virtual machines Settings dialog.
+2. Select an Adapter tab.
+3. Ensure that the Enable Network Adapter check box is selected.
+4. Choose Cloud Network as the Attached To field.
+
+This will configure the virtual machine to use a NAT network interface for internet access.
+2025-11-21 18:04:02 | INFO | LLM | Response Time = 43.9521s
+2025-11-21 18:04:02 | INFO | QUERY | TOTAL LATENCY = 46.1851s
+2025-11-21 18:08:26 | INFO | API | Cached 307 chapter embeddings.
+2025-11-21 22:07:31 | INFO | QUERY | Query received  network adapter types in virtualbox 
+2025-11-21 22:08:56 | INFO | QUERY | Query received  hello
+2025-11-21 22:12:16 | INFO | QUERY | Query received  network adapter types in virtualbox
+2025-11-21 22:17:44 | INFO | QUERY | Query received  NAT network not working in virtualbox
+2025-11-21 22:17:46 | INFO | QUERY | Raw chapter scores  [('7 Virtual Networking > 7.11 Network Manager > 7.11.2 NAT Networks Tab', 0.7664852129315729), ('10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.4 Binding NAT Sockets to a Specific Interface', 0.7612674027845343), ("10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.6 Using the Host's Resolver as a DNS Proxy in NAT Mode", 0.7610291299072864), ('9 VBoxManage > 9.47 VBoxManage natnetwork', 0.759791807430402), ('7 Virtual Networking > 7.3 Network Address Translation (NAT) > 7.3.2 PXE Booting with NAT', 0.7378225829994927)]
+2025-11-21 22:17:46 | INFO | QUERY | max_score = 0.766
+2025-11-21 22:17:46 | INFO | QUERY | Chapters kept  ['7 Virtual Networking > 7.11 Network Manager > 7.11.2 NAT Networks Tab', '10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.4 Binding NAT Sockets to a Specific Interface', "10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.6 Using the Host's Resolver as a DNS Proxy in NAT Mode", '9 VBoxManage > 9.47 VBoxManage natnetwork', '7 Virtual Networking > 7.3 Network Address Translation (NAT) > 7.3.2 PXE Booting with NAT']
+2025-11-21 22:17:46 | INFO | QUERY | Chapter match time = 2.3223s
+2025-11-21 22:17:49 | INFO | QUERY | Docs from '7 Virtual Networking > 7.11 Network Manager > 7.11.2 NAT Networks Tab'  2
+2025-11-21 22:17:49 | INFO | QUERY | Docs from '10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.4 Binding NAT Sockets to a Specific Interface'  2
+2025-11-21 22:17:49 | INFO | QUERY | Docs from '10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.6 Using the Host's Resolver as a DNS Proxy in NAT Mode'  2
+2025-11-21 22:17:49 | INFO | QUERY | Docs from '9 VBoxManage > 9.47 VBoxManage natnetwork'  2
+2025-11-21 22:17:49 | INFO | QUERY | Docs from '7 Virtual Networking > 7.3 Network Address Translation (NAT) > 7.3.2 PXE Booting with NAT'  2
+2025-11-21 22:17:49 | INFO | QUERY | Total unique docs  7
+2025-11-21 22:17:52 | INFO | QUERY | Context similarity score = 0.727
+2025-11-21 22:21:05 | INFO | QUERY | Query received  bridged adapter not working. how to change to NAT network in virtualbox
+2025-11-21 22:21:07 | INFO | QUERY | Raw chapter scores  [('10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.4 Binding NAT Sockets to a Specific Interface', 0.760272491020166), ('9 VBoxManage > 9.47 VBoxManage natnetwork', 0.7595400674930558), ('7 Virtual Networking > 7.11 Network Manager > 7.11.2 NAT Networks Tab', 0.7511735904644348), ("10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.6 Using the Host's Resolver as a DNS Proxy in NAT Mode", 0.7493405231967125), ('7 Virtual Networking > 7.3 Network Address Translation (NAT) > 7.3.2 PXE Booting with NAT', 0.7458621820477047)]
+2025-11-21 22:21:07 | INFO | QUERY | max_score = 0.760
+2025-11-21 22:21:07 | INFO | QUERY | Chapters kept  ['10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.4 Binding NAT Sockets to a Specific Interface', '9 VBoxManage > 9.47 VBoxManage natnetwork', '7 Virtual Networking > 7.11 Network Manager > 7.11.2 NAT Networks Tab', "10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.6 Using the Host's Resolver as a DNS Proxy in NAT Mode", '7 Virtual Networking > 7.3 Network Address Translation (NAT) > 7.3.2 PXE Booting with NAT']
+2025-11-21 22:21:07 | INFO | QUERY | Chapter match time = 2.2106s
+2025-11-21 22:21:09 | INFO | QUERY | Docs from '10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.4 Binding NAT Sockets to a Specific Interface'  2
+2025-11-21 22:21:09 | INFO | QUERY | Docs from '9 VBoxManage > 9.47 VBoxManage natnetwork'  2
+2025-11-21 22:21:10 | INFO | QUERY | Docs from '7 Virtual Networking > 7.11 Network Manager > 7.11.2 NAT Networks Tab'  2
+2025-11-21 22:21:10 | INFO | QUERY | Docs from '10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.6 Using the Host's Resolver as a DNS Proxy in NAT Mode'  1
+2025-11-21 22:21:10 | INFO | QUERY | Docs from '7 Virtual Networking > 7.3 Network Address Translation (NAT) > 7.3.2 PXE Booting with NAT'  2
+2025-11-21 22:21:10 | INFO | QUERY | Total unique docs  7
+2025-11-21 22:21:11 | INFO | QUERY | Context similarity score = 0.727
+2025-11-21 22:22:06 | INFO | LLM | PROMPT SENT  
+You are a customer support technical expert.
+Answer STRICTLY using only the provided context.
+If the information is incomplete  ask a follow-up question.
+Do NOT hallucinate. Do NOT use outside knowledge.
+
+-------------------------
+CONTEXT:
+10 Advanced Topics 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine 10.8.1 Conguring the Address of a NAT Network Interface In NAT mode, the guest network
+2025-11-21 22:22:06 | INFO | LLM | LLM REPLY  To change from bridged adapter to a NAT network, you can use the following command:
+
+$ VBoxManage modifyvm <VM-name> \ --natnet1 "192.168/16"
+
+This command would reserve the network addresses from 192.168.0.0 to 192.168.254.254 for the first NAT network instance of VM-name.
+
+Please note that you should replace `<VM-name>` with your actual virtual machine name.
+
+Also, if you have multiple NAT instances active, you need to specify the correct NAT network instance number in the command (e.g., `--natnet1` for the first NAT instance, `--natnet2` for the second, etc.).
+2025-11-21 22:22:06 | INFO | LLM | Response Time = 54.4724s
+2025-11-21 22:22:06 | INFO | QUERY | TOTAL LATENCY = 60.9276s
+2025-11-21 22:23:18 | INFO | QUERY | Query received  difference between Convolution Neural Network and Recurrent Nerual Network?
+2025-11-21 22:23:22 | INFO | QUERY | Raw chapter scores  [('2 First Steps > 2.3 Features Overview', 0.4396210883275923), ('6 Virtual Storage > 6.5 Differencing Images', 0.4356040943633329), ('7 Virtual Networking > 7.5 Bridged Networking', 0.41843687433992977), ('Unknown', 0.4181098778175337), ('2 First Steps > 2.18 Alternative Front-Ends', 0.40999171317376343)]
+2025-11-21 22:23:22 | INFO | QUERY | max_score = 0.440
+2025-11-21 22:23:22 | INFO | QUERY | Chapters kept  []
+2025-11-21 22:23:22 | INFO | QUERY | Chapter match time = 3.8321s
+2025-11-21 23:03:57 | INFO | PARSER | Starting ingestion for PDF: data\raw_pdfs\virtualbox_6.pdf
+2025-11-21 23:03:57 | INFO | PARSER | Opening PDF — data\raw_pdfs\virtualbox_6.pdf
+2025-11-21 23:03:57 | INFO | PARSER | Total pages detected: 226
+2025-11-21 23:03:57 | INFO | PARSER | TOC found — using HIERARCHICAL handler
+2025-11-21 23:03:57 | INFO | PARSER | Hierarchical TOC parsing complete — 310 detected
+2025-11-21 23:03:57 | INFO | PARSER | Structured parsing complete — 221 blocks created
+2025-11-21 23:03:57 | INFO | PARSER | Parsed 221 blocks from data\raw_pdfs\virtualbox_6.pdf
+2025-11-21 23:03:57 | INFO | PARSER | Raw blocks saved to data\processed_csv\raw_blocks.json
+2025-11-21 23:03:57 | INFO | PARSER | Chunking enabled.
+2025-11-21 23:03:57 | INFO | PARSER | Starting chunking for source=virtualbox_6.pdf | total_blocks=221
+2025-11-21 23:03:57 | INFO | PARSER | Finished chunking for source=virtualbox_6.pdf | total_chunks=389
+2025-11-21 23:03:57 | INFO | PARSER | Created 389 chunks -> data\processed_csv\raw_blocks_chunked.json
+2025-11-21 23:03:57 | INFO | PARSER | Ingestion pipeline complete.
+2025-11-21 23:05:33 | INFO | EMBEDDER | Starting ChromaDB build | input=data\processed_csv\raw_blocks_chunked.json | persist=data\chroma_db | limit=None
+2025-11-21 23:19:53 | INFO | PARSER | Starting ingestion for PDF: data\raw_pdfs\virtualbox_7.pdf
+2025-11-21 23:19:53 | INFO | PARSER | Opening PDF — data\raw_pdfs\virtualbox_7.pdf
+2025-11-21 23:19:53 | INFO | PARSER | Total pages detected: 545
+2025-11-21 23:19:53 | INFO | PARSER | TOC found — using HIERARCHICAL handler
+2025-11-21 23:19:53 | INFO | PARSER | Hierarchical TOC parsing complete — 571 detected
+2025-11-21 23:19:55 | INFO | PARSER | Structured parsing complete — 545 blocks created
+2025-11-21 23:19:55 | INFO | PARSER | Parsed 545 blocks from data\raw_pdfs\virtualbox_7.pdf
+2025-11-21 23:19:55 | INFO | PARSER | Raw blocks saved to data\processed_csv\raw_blocks.json
+2025-11-21 23:19:55 | INFO | PARSER | Chunking enabled.
+2025-11-21 23:19:55 | INFO | PARSER | Starting chunking for source=virtualbox_7.pdf | total_blocks=545
+2025-11-21 23:19:55 | INFO | PARSER | Finished chunking for source=virtualbox_7.pdf | total_chunks=952
+2025-11-21 23:19:55 | INFO | PARSER | Created 952 chunks -> data\processed_csv\raw_blocks_chunked.json
+2025-11-21 23:19:55 | INFO | PARSER | Ingestion pipeline complete.
+2025-11-21 23:23:34 | INFO | EMBEDDER | Starting ChromaDB build | input=data\processed_csv\raw_blocks_chunked.json | persist=data\chroma_db | limit=None
+2025-11-21 23:46:31 | INFO | EMBEDDER | Stored 952 chunks into data\chroma_db
+2025-11-21 23:53:38 | INFO | QUERY | Query received  bridge adapter not working. How to change to NAT network in virtualbox?
+2025-11-21 23:53:41 | INFO | QUERY | Raw chapter scores  [('9 VBoxManage > 9.47 VBoxManage natnetwork', 0.7606973563341043), ('10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.4 Binding NAT Sockets to a Specific Interface', 0.7554378205805222), ('7 Virtual Networking > 7.11 Network Manager > 7.11.2 NAT Networks Tab', 0.7533122736790195), ('7 Virtual Networking > 7.3 Network Address Translation (NAT) > 7.3.2 PXE Booting with NAT', 0.7522717219342049), ("10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.6 Using the Host's Resolver as a DNS Proxy in NAT Mode", 0.7428354021595347)]
+2025-11-21 23:53:41 | INFO | QUERY | max_score = 0.761
+2025-11-21 23:53:41 | INFO | QUERY | Chapters kept  ['9 VBoxManage > 9.47 VBoxManage natnetwork', '10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.4 Binding NAT Sockets to a Specific Interface', '7 Virtual Networking > 7.11 Network Manager > 7.11.2 NAT Networks Tab', '7 Virtual Networking > 7.3 Network Address Translation (NAT) > 7.3.2 PXE Booting with NAT', "10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.6 Using the Host's Resolver as a DNS Proxy in NAT Mode"]
+2025-11-21 23:53:41 | INFO | QUERY | Chapter match time = 2.3839s
+2025-11-21 23:53:43 | INFO | QUERY | Docs from '9 VBoxManage > 9.47 VBoxManage natnetwork'  2
+2025-11-21 23:53:43 | INFO | QUERY | Docs from '10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.4 Binding NAT Sockets to a Specific Interface'  2
+2025-11-21 23:53:43 | INFO | QUERY | Docs from '7 Virtual Networking > 7.11 Network Manager > 7.11.2 NAT Networks Tab'  2
+2025-11-21 23:53:44 | INFO | QUERY | Docs from '7 Virtual Networking > 7.3 Network Address Translation (NAT) > 7.3.2 PXE Booting with NAT'  2
+2025-11-21 23:53:44 | INFO | QUERY | Docs from '10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.6 Using the Host's Resolver as a DNS Proxy in NAT Mode'  2
+2025-11-21 23:53:44 | INFO | QUERY | Total unique docs  7
+2025-11-21 23:53:46 | INFO | QUERY | Context similarity score = 0.720
+2025-11-21 23:55:16 | INFO | LLM | PROMPT SENT  
+You are a customer support technical expert.
+Answer STRICTLY using only the provided context.
+If the information is incomplete  ask a follow-up question.
+Do NOT hallucinate. Do NOT use outside knowledge.
+
+-------------------------
+CONTEXT:
+9 VBoxManage Modify the Settings of a NAT Network Service VBoxManage natnetwork modify [--dhcp=on|off] [--disable | --enable] <--netname=name> <--network=netw
+2025-11-21 23:55:16 | INFO | LLM | LLM REPLY  To change from a bridge adapter to a NAT network, you can use the following command:
+
+$ VBoxManage modifyvm <VM-name> \ --naturboname "natnet1"
+
+This will modify the VM's settings to use the NAT network service with the name "natnet1". The NAT network service will then be used instead of the bridge adapter.
+2025-11-21 23:55:16 | INFO | LLM | Response Time = 89.7716s
+2025-11-21 23:55:16 | INFO | QUERY | TOTAL LATENCY = 97.8044s
+2025-11-21 23:55:50 | INFO | QUERY | Query received  now to change different NAT networks in virtualbox
+2025-11-21 23:55:54 | INFO | QUERY | Raw chapter scores  [('7 Virtual Networking > 7.11 Network Manager > 7.11.2 NAT Networks Tab', 0.8133709606873154), ('9 VBoxManage > 9.47 VBoxManage natnetwork', 0.7904457579458846), ('7 Virtual Networking > 7.3 Network Address Translation (NAT) > 7.3.2 PXE Booting with NAT', 0.7878239075716544), ('7 Virtual Networking > 7.3 Network Address Translation (NAT)', 0.7753317146285845), ('10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.4 Binding NAT Sockets to a Specific Interface', 0.7666550851903938)]
+2025-11-21 23:55:54 | INFO | QUERY | max_score = 0.813
+2025-11-21 23:55:54 | INFO | QUERY | Chapters kept  ['7 Virtual Networking > 7.11 Network Manager > 7.11.2 NAT Networks Tab', '9 VBoxManage > 9.47 VBoxManage natnetwork', '7 Virtual Networking > 7.3 Network Address Translation (NAT) > 7.3.2 PXE Booting with NAT', '7 Virtual Networking > 7.3 Network Address Translation (NAT)', '10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.4 Binding NAT Sockets to a Specific Interface']
+2025-11-21 23:55:54 | INFO | QUERY | Chapter match time = 4.0537s
+2025-11-21 23:55:56 | INFO | QUERY | Docs from '7 Virtual Networking > 7.11 Network Manager > 7.11.2 NAT Networks Tab'  2
+2025-11-21 23:55:56 | INFO | QUERY | Docs from '9 VBoxManage > 9.47 VBoxManage natnetwork'  2
+2025-11-21 23:55:56 | INFO | QUERY | Docs from '7 Virtual Networking > 7.3 Network Address Translation (NAT) > 7.3.2 PXE Booting with NAT'  2
+2025-11-21 23:55:56 | INFO | QUERY | Docs from '7 Virtual Networking > 7.3 Network Address Translation (NAT)'  2
+2025-11-21 23:55:57 | INFO | QUERY | Docs from '10 Advanced Topics > 10.8 Fine Tuning the Oracle VM VirtualBox NAT Engine > 10.8.4 Binding NAT Sockets to a Specific Interface'  2
+2025-11-21 23:55:57 | INFO | QUERY | Total unique docs  7
+2025-11-21 23:55:59 | INFO | QUERY | Context similarity score = 0.745
+2025-11-21 23:56:56 | INFO | LLM | PROMPT SENT  
+You are a customer support technical expert.
+Answer STRICTLY using only the provided context.
+If the information is incomplete  ask a follow-up question.
+Do NOT hallucinate. Do NOT use outside knowledge.
+
+-------------------------
+CONTEXT:
+7 Virtual Networking 7.10 Cloud Networks Cloud networks can be used for connections from a local VM to a subnet on a remote Oracle Cloud Infrastructure instan
+2025-11-21 23:56:56 | INFO | LLM | LLM REPLY  To change different NAT networks in VirtualBox, you can use the `VBoxManage` command with the `natnetwork modify` option.
+
+For example, let's say you want to enable DHCP for a NAT network called `natnet2`, while disabling it for another one called `natnet3`.
+
+You can use the following commands:
+
+1. Enable DHCP for `natnet2`:
+   $ VBoxManage natnetwork modify --dhcp on --netname natnet2
+
+2. Disable DHCP for `natnet3`:
+   $ VBoxManage natnetwork modify --dhcp off --netname natnet3
+2025-11-21 23:56:56 | INFO | LLM | Response Time = 56.9651s
+2025-11-21 23:56:56 | INFO | QUERY | TOTAL LATENCY = 66.4052s
+2025-11-21 23:57:53 | INFO | QUERY | Query received  difference between Convolution Neural Network and Recurrent Neural Network
+2025-11-21 23:57:56 | INFO | QUERY | Raw chapter scores  [('6 Virtual Storage > 6.5 Differencing Images', 0.4523934624585473), ('2 First Steps > 2.3 Features Overview', 0.44831666604304143), ('2 First Steps > 2.18 Alternative Front-Ends', 0.42924398033879574), ('Unknown', 0.42589081226537623), ('7 Virtual Networking > 7.5 Bridged Networking', 0.42083125206147226)]
+2025-11-21 23:57:56 | INFO | QUERY | max_score = 0.452
+2025-11-21 23:57:56 | INFO | QUERY | Chapters kept  []
+2025-11-21 23:57:56 | INFO | QUERY | Chapter match time = 3.4517s
